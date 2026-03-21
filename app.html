@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-page="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acidic Slime | macOS Xcode Storage Cleaner</title>
+  <meta name="description" data-i18n-attr="content:meta.app.description" content="Acidic Slime helps you scan and clean Xcode storage on macOS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="control-row">
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
+          <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">🇺🇸</button>
+          <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">🇯🇵</button>
+          <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">🇨🇳</button>
+        </div>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <img class="hero-logo" src="assets/images/acidicslime-icon.png" alt="Acidic Slime app icon" data-i18n-attr="alt:app.iconAlt">
+        <h1 data-i18n="app.title">Acidic Slime</h1>
+        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <p class="kicker" data-i18n="overview.kicker">Overview</p>
+      <h2 class="section-title" data-i18n="overview.title">Keep Xcode storage clean with less effort.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3 data-i18n="feature.1.title">Fast storage scan</h3>
+          <p data-i18n="feature.1.body">Check DerivedData, Archives, Device Support, logs, and other heavy directories in one view.</p>
+        </article>
+        <article class="feature-card">
+          <h3 data-i18n="feature.2.title">Clean your way</h3>
+          <p data-i18n="feature.2.body">Use Quick Clean for speed or Review &amp; Clean for item-level control.</p>
+        </article>
+        <article class="feature-card">
+          <h3 data-i18n="feature.3.title">Fits your setup</h3>
+          <p data-i18n="feature.3.body">Switch light and dark themes and configure default or custom folder locations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="screenshots">
+      <p class="kicker" data-i18n="screens.kicker">Screenshots</p>
+      <h2 class="section-title" data-i18n="screens.title">Designed for focused cleanup sessions.</h2>
+
+      <div class="shot-stack">
+        <article class="shot-row">
+          <div class="shot-copy">
+            <h3 data-i18n="screens.1.title">Dashboard</h3>
+            <p data-i18n="screens.1.body">See reclaimable space, run scans, and start cleanup from one calm interface.</p>
+          </div>
+          <figure class="shot-frame">
+            <img src="assets/images/acidicslime-dashboard.png" alt="Acidic Slime dashboard window" loading="lazy" data-i18n-attr="alt:screens.1.alt">
+          </figure>
+        </article>
+
+        <article class="shot-row reverse">
+          <div class="shot-copy">
+            <h3 data-i18n="screens.2.title">Settings</h3>
+            <p data-i18n="screens.2.body">Adjust appearance and folder locations to match your own Xcode workflow.</p>
+          </div>
+          <figure class="shot-frame">
+            <img src="assets/images/acidicslime-settings.png" alt="Acidic Slime settings window" loading="lazy" data-i18n-attr="alt:screens.2.alt">
+          </figure>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer.tagline">Focused tools for macOS developers.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
