@@ -15,6 +15,8 @@ const TRANSLATIONS = {
     "meta.home.description": "App gallery",
     "meta.app.title": "Acidic Slime | macOS Xcode Storage Cleaner",
     "meta.app.description": "Acidic Slime helps you scan and clean Xcode storage on macOS.",
+    "meta.privacy.title": "Privacy Policy | Acidic Slime",
+    "meta.privacy.description": "Privacy policy for Acidic Slime.",
 
     "home.kicker": "Independent Developer Apps",
     "home.title": "Practical macOS apps built with care.",
@@ -41,6 +43,12 @@ const TRANSLATIONS = {
     "app.cta.privacy": "Read Privacy Policy",
     "app.cta.screens": "View screenshots",
     "app.note": "Uses the same localized naming set shown in the privacy policy.",
+    "privacy.kicker": "Privacy",
+    "privacy.title": "Privacy Policy",
+    "privacy.intro": "This page contains the privacy policy for Acidic Slime.",
+    "privacy.locale.heading": "English (US/UK) — Acidic Slime",
+    "privacy.locale.label": "Privacy Policy",
+    "privacy.locale.body": "Acidic Slime does not collect, store, or transmit any personal data. All file processing occurs locally on your Mac. In-app purchases for tips are processed securely by Apple; the developer does not have access to your payment or personal information.",
 
     "overview.kicker": "Overview",
     "overview.title": "Keep Xcode storage clean with less effort.",
@@ -85,6 +93,8 @@ const TRANSLATIONS = {
     "meta.home.description": "アプリギャラリー",
     "meta.app.title": "酸性スライム | macOS向けXcodeストレージクリーナー",
     "meta.app.description": "Acidic Slime は macOS 上で Xcode ストレージをスキャンして整理します。",
+    "meta.privacy.title": "プライバシーポリシー | 酸性スライム",
+    "meta.privacy.description": "酸性スライムのプライバシーポリシー。",
 
     "home.kicker": "インディー開発アプリ",
     "home.title": "実用性を重視した macOS アプリ。",
@@ -111,6 +121,12 @@ const TRANSLATIONS = {
     "app.cta.privacy": "プライバシーポリシーを見る",
     "app.cta.screens": "スクリーンショットを見る",
     "app.note": "プライバシーポリシーに掲載している名称セットと同じ内容を表示しています。",
+    "privacy.kicker": "プライバシー",
+    "privacy.title": "プライバシーポリシー",
+    "privacy.intro": "このページには Acidic Slime のプライバシーポリシーを掲載しています。",
+    "privacy.locale.heading": "日本語 (Japanese) — Acidic Slime",
+    "privacy.locale.label": "プライバシーポリシー",
+    "privacy.locale.body": "Acidic Slimeは、ユーザーの個人情報を一切収集、保存、または送信しません。すべてのファイル処理はユーザーのMac上でローカルに行われます。チップ（アプリ内課金）はAppleによって安全に処理され、開発者がユーザーの支払い情報や個人情報にアクセスすることはありません。",
 
     "overview.kicker": "概要",
     "overview.title": "Xcode ストレージの整理を、もっとシンプルに。",
@@ -155,6 +171,8 @@ const TRANSLATIONS = {
     "meta.home.description": "应用图库",
     "meta.app.title": "酸性史莱姆 | macOS Xcode 存储清理工具",
     "meta.app.description": "酸性史莱姆可在 macOS 上扫描并清理 Xcode 存储。",
+    "meta.privacy.title": "隐私政策 | 酸性史莱姆",
+    "meta.privacy.description": "酸性史莱姆隐私政策。",
 
     "home.kicker": "独立开发者应用",
     "home.title": "注重实用与质量的 macOS 应用。",
@@ -181,6 +199,12 @@ const TRANSLATIONS = {
     "app.cta.privacy": "查看隐私政策",
     "app.cta.screens": "查看截图",
     "app.note": "此处名称与隐私政策页面中展示的本地化命名保持一致。",
+    "privacy.kicker": "隐私",
+    "privacy.title": "隐私政策",
+    "privacy.intro": "此页面包含酸性史莱姆及其本地化版本的隐私政策。",
+    "privacy.locale.heading": "简体中文 (Simplified Chinese) — 酸性史莱姆",
+    "privacy.locale.label": "隐私政策",
+    "privacy.locale.body": "酸性史莱姆不收集、存储或传输任何个人数据。所有文件处理均在您的 Mac 上本地进行。打赏（应用内购买）由 Apple 安全处理；开发者无法访问您的支付信息或个人信息。",
 
     "overview.kicker": "概览",
     "overview.title": "更省心地保持 Xcode 存储整洁。",
@@ -207,11 +231,81 @@ const TRANSLATIONS = {
 
     "footer.tagline": "为 macOS 开发者打造的专注工具。",
     "footer.privacy": "查看隐私政策"
+  },
+
+  ko: {
+    "controls.language": "언어",
+    "controls.back": "홈으로 돌아가기",
+    "controls.theme.toggle": "라이트/다크 테마 전환",
+    "meta.privacy.title": "개인정보 처리방침 | 산성 슬라임",
+    "meta.privacy.description": "산성 슬라임 개인정보 처리방침.",
+    "privacy.kicker": "개인정보",
+    "privacy.title": "개인정보 처리방침",
+    "privacy.intro": "이 페이지에는 산성 슬라임의 개인정보 처리방침이 포함되어 있습니다.",
+    "privacy.locale.heading": "한국어 (Korean) — 산성 슬라임",
+    "privacy.locale.label": "개인정보 처리방침",
+    "privacy.locale.body": "산성 슬라임은 사용자의 개인 정보를 수집, 저장 또는 전송하지 않습니다. 모든 파일 처리는 사용자의 Mac에서 로컬로 이루어집니다. 팁(앱 내 결제)은 Apple에서 안전하게 처리하며, 개발자는 사용자의 결제 정보나 개인 정보에 접근할 수 없습니다."
+  },
+
+  it: {
+    "controls.language": "Lingua",
+    "controls.back": "Torna alla home",
+    "controls.theme.toggle": "Passa tema chiaro/scuro",
+    "meta.privacy.title": "Informativa sulla privacy | Melma Acida",
+    "meta.privacy.description": "Informativa sulla privacy di Melma Acida.",
+    "privacy.kicker": "Privacy",
+    "privacy.title": "Informativa sulla privacy",
+    "privacy.intro": "Questa pagina contiene l'informativa sulla privacy di Melma Acida.",
+    "privacy.locale.heading": "Italiano (Italian) — Melma Acida",
+    "privacy.locale.label": "Informativa sulla privacy",
+    "privacy.locale.body": "Melma Acida non raccoglie, memorizza o trasmette alcun dato personale. Tutte le operazioni sui file avvengono localmente sul tuo Mac. Le mance (acquisti in-app) sono gestite in modo sicuro da Apple; lo sviluppatore non ha accesso ai tuoi dati di pagamento o alle tue informazioni personali."
+  },
+
+  fr: {
+    "controls.language": "Langue",
+    "controls.back": "Retour à l'accueil",
+    "controls.theme.toggle": "Basculer thème clair/sombre",
+    "meta.privacy.title": "Politique de confidentialité | Gelée Acide",
+    "meta.privacy.description": "Politique de confidentialité de Gelée Acide.",
+    "privacy.kicker": "Confidentialité",
+    "privacy.title": "Politique de confidentialité",
+    "privacy.intro": "Cette page contient la politique de confidentialité de Gelée Acide.",
+    "privacy.locale.heading": "Français (French) — Gelée Acide",
+    "privacy.locale.label": "Politique de confidentialité",
+    "privacy.locale.body": "Gelée Acide ne collecte, ne stocke ni ne transmet aucune donnée personnelle. Tout le traitement des fichiers s'effectue localement sur votre Mac. Les pourboires (achats intégrés) sont gérés de manière sécurisée par Apple ; le développeur n'a pas accès à vos informations de paiement ou à vos données personnelles."
+  },
+
+  "zh-Hant": {
+    "controls.language": "語言",
+    "controls.back": "返回首頁",
+    "controls.theme.toggle": "切換淺色或深色主題",
+    "meta.privacy.title": "隱私政策 | 酸性史萊姆",
+    "meta.privacy.description": "酸性史萊姆隱私政策。",
+    "privacy.kicker": "隱私",
+    "privacy.title": "隱私政策",
+    "privacy.intro": "此頁面包含酸性史萊姆的隱私政策。",
+    "privacy.locale.heading": "繁體中文 (Traditional Chinese) — 酸性史萊姆",
+    "privacy.locale.label": "隱私政策",
+    "privacy.locale.body": "酸性史萊姆不收集、儲存或傳輸任何個人數據。所有檔案處理均在您的 Mac 上本地進行。打賞（應用內購買）由 Apple 安全處理；開發者無法訪問您的支付資訊或個人資訊。"
+  },
+
+  ar: {
+    "controls.language": "اللغة",
+    "controls.back": "العودة إلى الصفحة الرئيسية",
+    "controls.theme.toggle": "تبديل الوضع الفاتح/الداكن",
+    "meta.privacy.title": "سياسة الخصوصية | الوحل الحمضي",
+    "meta.privacy.description": "سياسة الخصوصية لتطبيق الوحل الحمضي.",
+    "privacy.kicker": "الخصوصية",
+    "privacy.title": "سياسة الخصوصية",
+    "privacy.intro": "تحتوي هذه الصفحة على سياسة الخصوصية لتطبيق الوحل الحمضي.",
+    "privacy.locale.heading": "العربية (Arabic) — الوحل الحمضي",
+    "privacy.locale.label": "سياسة الخصوصية",
+    "privacy.locale.body": "الوحل الحمضي لا يقوم بجمع أو تخزين أو نقل أي بيانات شخصية. تتم جميع عمليات معالجة الملفات محلياً على جهاز Mac الخاص بك. تتم معالجة الإكراميات (عمليات الشراء داخل التطبيق) بشكل آمن بواسطة Apple؛ ولا يمكن للمطور الوصول إلى معلومات الدفع أو بياناتك الشخصية."
   }
 };
 
 (() => {
-  const SUPPORTED_LOCALES = ["en", "ja", "zh-Hans"];
+  const SUPPORTED_LOCALES = ["en", "ja", "ko", "it", "fr", "zh-Hans", "zh-Hant", "ar"];
   const LOCALE_STORAGE_KEY = "site-locale";
   const THEME_STORAGE_KEY = "site-theme";
   const DEFAULT_LOCALE = "en";
@@ -240,8 +334,15 @@ const TRANSLATIONS = {
     const lowered = String(value).toLowerCase();
     if (lowered === "en" || lowered.startsWith("en-")) return "en";
     if (lowered === "ja" || lowered.startsWith("ja-")) return "ja";
+    if (lowered === "ko" || lowered.startsWith("ko-")) return "ko";
+    if (lowered === "it" || lowered.startsWith("it-")) return "it";
+    if (lowered === "fr" || lowered.startsWith("fr-")) return "fr";
+    if (lowered === "ar" || lowered.startsWith("ar-")) return "ar";
     if (lowered === "zh" || lowered.startsWith("zh-cn") || lowered.startsWith("zh-hans") || lowered.startsWith("zh-sg")) {
       return "zh-Hans";
+    }
+    if (lowered.startsWith("zh-tw") || lowered.startsWith("zh-hk") || lowered.startsWith("zh-hant")) {
+      return "zh-Hant";
     }
     return null;
   };
@@ -279,8 +380,7 @@ const TRANSLATIONS = {
 
       const url = new URL(href, window.location.href);
       url.searchParams.set("lang", currentLocale);
-      const relativePath = url.pathname.split("/").pop() || "index.html";
-      element.setAttribute("href", `${relativePath}${url.search}${url.hash}`);
+      element.setAttribute("href", `${url.pathname}${url.search}${url.hash}`);
     });
   };
 
