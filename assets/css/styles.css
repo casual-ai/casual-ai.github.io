@@ -75,6 +75,10 @@ a {
   gap: 1rem;
 }
 
+.app-header-inner {
+  justify-content: space-between;
+}
+
 .control-row {
   display: inline-flex;
   align-items: center;
@@ -93,7 +97,8 @@ a {
 }
 
 .lang-btn,
-.icon-btn {
+.icon-btn,
+.back-btn {
   width: 2.35rem;
   height: 2.35rem;
   border: 1px solid var(--line-strong);
@@ -107,6 +112,11 @@ a {
   font-size: 0.8rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+.back-btn {
+  font-size: 1.1rem;
+  line-height: 1;
 }
 
 .lang-btn.is-active {
@@ -372,6 +382,10 @@ main {
 
   .header-inner {
     justify-content: flex-end;
+  }
+
+  .app-header-inner {
+    justify-content: space-between;
   }
 
   .section {

@@ -8,6 +8,7 @@ const TRANSLATIONS = {
     "nav.privacy": "Privacy",
 
     "controls.language": "Language",
+    "controls.back": "Back to homepage",
     "controls.theme.toggle": "Switch light or dark theme",
 
     "meta.home.title": "Apps",
@@ -77,6 +78,7 @@ const TRANSLATIONS = {
     "nav.privacy": "プライバシー",
 
     "controls.language": "言語",
+    "controls.back": "ホームへ戻る",
     "controls.theme.toggle": "ライト/ダークテーマを切り替え",
 
     "meta.home.title": "アプリ",
@@ -146,6 +148,7 @@ const TRANSLATIONS = {
     "nav.privacy": "隐私",
 
     "controls.language": "语言",
+    "controls.back": "返回首页",
     "controls.theme.toggle": "切换浅色或深色主题",
 
     "meta.home.title": "应用",
