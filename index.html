@@ -1,19 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-page="home" data-title-key="meta.home.title">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Acidic Slime</title>
-  <meta http-equiv="refresh" content="0; url=app.html">
-  <script>
-    (function () {
-      var current = new URL(window.location.href);
-      var target = new URL("app.html", current);
-      target.search = current.search;
-      target.hash = current.hash;
-      window.location.replace(target.toString());
-    })();
-  </script>
+  <title>Apps</title>
+  <meta name="description" data-i18n-attr="content:meta.home.description" content="App gallery">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body></body>
+<body>
+  <header class="site-header">
+    <div class="container header-inner home-header-inner">
+      <div class="control-row">
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
+          <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
+          <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">JP</button>
+          <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
+        </div>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="container" id="apps">
+      <div class="app-gallery home-gallery" role="list" aria-label="Application icon gallery" data-i18n-attr="aria-label:gallery.aria">
+        <a class="home-app-link reveal" href="acidic-slime.html" data-localized-link role="listitem">
+          <img class="home-app-icon" src="assets/images/acidicslime-icon.png" alt="Acidic Slime app icon" data-i18n-attr="alt:app.iconAlt">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/site.js"></script>
+</body>
 </html>
