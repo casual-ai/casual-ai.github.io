@@ -15,8 +15,12 @@ const TRANSLATIONS = {
     "meta.home.description": "App gallery",
     "meta.app.title": "Acidic Slime | macOS Xcode Storage Cleaner",
     "meta.app.description": "Acidic Slime helps you scan and clean Xcode storage on macOS.",
+    "meta.arithzo.title": "Arithzo | Mental Arithmetic Training for Elementary Students",
+    "meta.arithzo.description": "Arithzo helps elementary students build arithmetic speed and accuracy with game-like practice.",
     "meta.privacy.title": "Privacy Policy | Acidic Slime",
     "meta.privacy.description": "Privacy policy for Acidic Slime.",
+    "meta.privacy.arithzo.title": "Privacy Policy | Arithzo",
+    "meta.privacy.arithzo.description": "Privacy policy for Arithzo.",
 
     "home.kicker": "Independent Developer Apps",
     "home.title": "Practical macOS apps built with care.",
@@ -33,6 +37,7 @@ const TRANSLATIONS = {
     "gallery.body": "This homepage is now a scalable app gallery. As new apps launch, their icons will appear here.",
     "gallery.aria": "Application icon gallery",
     "gallery.acidicSlime": "Xcode storage cleaner for macOS",
+    "gallery.arithzo": "Mental arithmetic training game for elementary students",
     "gallery.more.title": "Next App",
     "gallery.more.body": "Coming soon",
 
@@ -75,6 +80,33 @@ const TRANSLATIONS = {
     "screens.2.body": "Adjust appearance and folder locations to match your own Xcode workflow.",
     "screens.2.alt": "Acidic Slime settings window",
 
+    "arithzo.iconAlt": "Arithzo app icon",
+    "arithzo.title": "Arithzo",
+    "arithzo.subtitle": "Mental arithmetic training for elementary students",
+    "arithzo.overview.kicker": "Overview",
+    "arithzo.overview.title": "Fast daily arithmetic practice that feels like a game.",
+    "arithzo.feature.1.title": "Age-appropriate drills",
+    "arithzo.feature.1.body": "Practice addition, subtraction, multiplication, and division with clear progression for elementary students.",
+    "arithzo.feature.2.title": "Speed and accuracy focus",
+    "arithzo.feature.2.body": "Run short sessions designed to improve both answer correctness and response speed.",
+    "arithzo.feature.3.title": "Challenge yourself",
+    "arithzo.feature.3.body": "Track progress over time and keep pushing for new personal best scores.",
+    "arithzo.screens.kicker": "Screenshot",
+    "arithzo.screens.title": "Main menu and training modes at a glance.",
+    "arithzo.screens.1.title": "Home screen",
+    "arithzo.screens.1.body": "Jump into focused practice sessions and challenge modes from one clear starting point.",
+    "arithzo.screens.alt": "Arithzo app screenshot",
+    "arithzo.screens.1.alt": "Arithzo light mode home screen",
+    "arithzo.screens.2.alt": "Arithzo light mode practice settings screen",
+    "arithzo.screens.3.alt": "Arithzo dark mode home screen",
+    "arithzo.screens.4.alt": "Arithzo dark mode challenge mode selection screen",
+    "arithzo.footer.tagline": "Focused learning games for students.",
+
+    "privacy.arithzo.kicker": "Privacy",
+    "privacy.arithzo.title": "Privacy Policy",
+    "privacy.arithzo.intro": "This page contains the privacy policy for Arithzo.",
+    "privacy.arithzo.body": "Arithzo does not collect, store, or transmit any personal data. All app activity and progress data are processed and stored locally on your device. In-app purchases for tips are handled securely by Apple; the developer does not have access to your payment details or personal information.",
+
     "footer.tagline": "Focused tools for macOS developers.",
     "footer.privacy": "Read Privacy Policy"
   },
@@ -95,8 +127,12 @@ const TRANSLATIONS = {
     "meta.home.description": "アプリギャラリー",
     "meta.app.title": "酸性スライム | macOS向けXcodeストレージクリーナー",
     "meta.app.description": "Acidic Slime は macOS 上で Xcode ストレージをスキャンして整理します。",
+    "meta.arithzo.title": "Arithzo | 小学生向け暗算トレーニング",
+    "meta.arithzo.description": "Arithzo はゲーム感覚の練習で、小学生の計算スピードと正確さを伸ばします。",
     "meta.privacy.title": "プライバシーポリシー | 酸性スライム",
     "meta.privacy.description": "酸性スライムのプライバシーポリシー。",
+    "meta.privacy.arithzo.title": "プライバシーポリシー | アリスゾ",
+    "meta.privacy.arithzo.description": "アリスゾ のプライバシーポリシー。",
 
     "home.kicker": "インディー開発アプリ",
     "home.title": "実用性を重視した macOS アプリ。",
@@ -113,6 +149,7 @@ const TRANSLATIONS = {
     "gallery.body": "このホームページは拡張可能なアプリギャラリー構成になりました。新しいアプリはここに追加されます。",
     "gallery.aria": "アプリアイコンギャラリー",
     "gallery.acidicSlime": "macOS向け Xcode ストレージクリーナー",
+    "gallery.arithzo": "小学生向け暗算トレーニングゲーム",
     "gallery.more.title": "次のアプリ",
     "gallery.more.body": "近日公開",
 
@@ -155,6 +192,33 @@ const TRANSLATIONS = {
     "screens.2.body": "外観やフォルダ設定を調整して、Xcode ワークフローに合わせられます。",
     "screens.2.alt": "Acidic Slime の設定画面",
 
+    "arithzo.iconAlt": "Arithzo のアプリアイコン",
+    "arithzo.title": "アリスゾ",
+    "arithzo.subtitle": "小学生向け暗算トレーニング",
+    "arithzo.overview.kicker": "概要",
+    "arithzo.overview.title": "毎日の計算練習を、ゲーム感覚でテンポよく。",
+    "arithzo.feature.1.title": "学年に合わせた問題",
+    "arithzo.feature.1.body": "たし算・ひき算・かけ算・わり算を、段階的に練習できます。",
+    "arithzo.feature.2.title": "正確さとスピード",
+    "arithzo.feature.2.body": "短いセッションで、正答率と回答スピードを同時に強化できます。",
+    "arithzo.feature.3.title": "自己ベストに挑戦",
+    "arithzo.feature.3.body": "日々の記録を積み重ねながら、自己ベスト更新を目指せます。",
+    "arithzo.screens.kicker": "スクリーンショット",
+    "arithzo.screens.title": "ホーム画面からすぐに練習モードへ。",
+    "arithzo.screens.1.title": "ホーム画面",
+    "arithzo.screens.1.body": "練習モードとチャレンジモードをひとつの画面からすぐに開始できます。",
+    "arithzo.screens.alt": "アリスゾのスクリーンショット",
+    "arithzo.screens.1.alt": "アリスゾのライトモードホーム画面",
+    "arithzo.screens.2.alt": "アリスゾのライトモード練習設定画面",
+    "arithzo.screens.3.alt": "アリスゾのダークモードホーム画面",
+    "arithzo.screens.4.alt": "アリスゾのダークモードチャレンジ選択画面",
+    "arithzo.footer.tagline": "生徒のための集中型学習ゲーム。",
+
+    "privacy.arithzo.kicker": "プライバシー",
+    "privacy.arithzo.title": "プライバシーポリシー",
+    "privacy.arithzo.intro": "このページには アリスゾ のプライバシーポリシーを掲載しています。",
+    "privacy.arithzo.body": "アリスゾ は、ユーザーの個人情報を収集、保存、送信しません。アプリ内の学習記録や進捗データは、端末内にのみ保存・処理されます。チップ（アプリ内課金）は Apple により安全に処理され、開発者が支払い情報や個人情報にアクセスすることはありません。",
+
     "footer.tagline": "macOS 開発者のための集中ツール。",
     "footer.privacy": "プライバシーポリシーを見る"
   },
@@ -175,8 +239,12 @@ const TRANSLATIONS = {
     "meta.home.description": "应用图库",
     "meta.app.title": "酸性史莱姆 | macOS Xcode 存储清理工具",
     "meta.app.description": "酸性史莱姆可在 macOS 上扫描并清理 Xcode 存储。",
+    "meta.arithzo.title": "Arithzo | 面向小学生的心算训练",
+    "meta.arithzo.description": "Arithzo 通过游戏化练习帮助小学生提升计算速度与准确率。",
     "meta.privacy.title": "隐私政策 | 酸性史莱姆",
     "meta.privacy.description": "酸性史莱姆隐私政策。",
+    "meta.privacy.arithzo.title": "隐私政策 | 速算",
+    "meta.privacy.arithzo.description": "速算隐私政策。",
 
     "home.kicker": "独立开发者应用",
     "home.title": "注重实用与质量的 macOS 应用。",
@@ -193,6 +261,7 @@ const TRANSLATIONS = {
     "gallery.body": "首页已升级为可扩展的应用图库，后续新应用会展示在这里。",
     "gallery.aria": "应用图标图库",
     "gallery.acidicSlime": "适用于 macOS 的 Xcode 存储清理工具",
+    "gallery.arithzo": "面向小学生的心算训练游戏",
     "gallery.more.title": "下一款应用",
     "gallery.more.body": "即将推出",
 
@@ -234,6 +303,33 @@ const TRANSLATIONS = {
     "screens.2.title": "设置",
     "screens.2.body": "调整外观和目录位置，使其贴合你的 Xcode 工作流。",
     "screens.2.alt": "酸性史莱姆设置窗口",
+
+    "arithzo.iconAlt": "Arithzo 应用图标",
+    "arithzo.title": "速算",
+    "arithzo.subtitle": "面向小学生的心算训练",
+    "arithzo.overview.kicker": "概览",
+    "arithzo.overview.title": "把日常算术练习变成轻快的游戏节奏。",
+    "arithzo.feature.1.title": "循序渐进练习",
+    "arithzo.feature.1.body": "围绕加减乘除提供适合小学生的分层训练内容。",
+    "arithzo.feature.2.title": "速度与准确并重",
+    "arithzo.feature.2.body": "通过短时训练同时提升计算正确率与作答速度。",
+    "arithzo.feature.3.title": "持续自我挑战",
+    "arithzo.feature.3.body": "记录练习表现，持续挑战并刷新个人最佳成绩。",
+    "arithzo.screens.kicker": "截图",
+    "arithzo.screens.title": "从主界面即可快速进入练习。",
+    "arithzo.screens.1.title": "主界面",
+    "arithzo.screens.1.body": "在一个清晰入口中选择练习模式与挑战模式。",
+    "arithzo.screens.alt": "速算应用截图",
+    "arithzo.screens.1.alt": "速算浅色模式主界面",
+    "arithzo.screens.2.alt": "速算浅色模式练习设置界面",
+    "arithzo.screens.3.alt": "速算深色模式主界面",
+    "arithzo.screens.4.alt": "速算深色模式挑战选择界面",
+    "arithzo.footer.tagline": "为学生打造的专注学习游戏。",
+
+    "privacy.arithzo.kicker": "隐私",
+    "privacy.arithzo.title": "隐私政策",
+    "privacy.arithzo.intro": "此页面包含速算的隐私政策。",
+    "privacy.arithzo.body": "速算不收集、存储或传输任何个人数据。应用内学习记录和进度数据仅在您的设备本地处理与保存。打赏（应用内购买）由 Apple 安全处理；开发者无法访问您的支付信息或个人信息。",
 
     "footer.tagline": "为 macOS 开发者打造的专注工具。",
     "footer.privacy": "查看隐私政策"
@@ -285,14 +381,44 @@ const TRANSLATIONS = {
     "controls.language": "語言",
     "controls.back": "返回首頁",
     "controls.theme.toggle": "切換淺色或深色主題",
+    "meta.arithzo.title": "Arithzo | 面向小學生的心算訓練",
+    "meta.arithzo.description": "Arithzo 透過遊戲化練習幫助小學生提升計算速度與準確度。",
     "meta.privacy.title": "隱私政策 | 酸性史萊姆",
     "meta.privacy.description": "酸性史萊姆隱私政策。",
+    "meta.privacy.arithzo.title": "隱私政策 | 速算",
+    "meta.privacy.arithzo.description": "速算隱私政策。",
     "privacy.kicker": "隱私",
     "privacy.title": "隱私政策",
     "privacy.intro": "此頁面包含酸性史萊姆的隱私政策。",
     "privacy.locale.heading": "繁體中文 (Traditional Chinese) — 酸性史萊姆",
     "privacy.locale.label": "隱私政策",
-    "privacy.locale.body": "酸性史萊姆不收集、儲存或傳輸任何個人數據。所有檔案處理均在您的 Mac 上本地進行。打賞（應用內購買）由 Apple 安全處理；開發者無法訪問您的支付資訊或個人資訊。"
+    "privacy.locale.body": "酸性史萊姆不收集、儲存或傳輸任何個人數據。所有檔案處理均在您的 Mac 上本地進行。打賞（應用內購買）由 Apple 安全處理；開發者無法訪問您的支付資訊或個人資訊。",
+    "arithzo.iconAlt": "速算應用圖標",
+    "arithzo.title": "速算",
+    "arithzo.subtitle": "面向小學生的心算訓練",
+    "arithzo.overview.kicker": "概覽",
+    "arithzo.overview.title": "把日常算術練習變成輕快的遊戲節奏。",
+    "arithzo.feature.1.title": "循序漸進練習",
+    "arithzo.feature.1.body": "圍繞加減乘除提供適合小學生的分層訓練內容。",
+    "arithzo.feature.2.title": "速度與準確並重",
+    "arithzo.feature.2.body": "透過短時訓練同時提升計算正確率與作答速度。",
+    "arithzo.feature.3.title": "持續自我挑戰",
+    "arithzo.feature.3.body": "記錄練習表現，持續挑戰並刷新個人最佳成績。",
+    "arithzo.screens.kicker": "截圖",
+    "arithzo.screens.title": "從主畫面即可快速進入練習。",
+    "arithzo.screens.1.title": "主畫面",
+    "arithzo.screens.1.body": "在一個清晰入口中選擇練習模式與挑戰模式。",
+    "arithzo.screens.alt": "速算應用截圖",
+    "arithzo.screens.1.alt": "速算淺色模式主畫面",
+    "arithzo.screens.2.alt": "速算淺色模式練習設定畫面",
+    "arithzo.screens.3.alt": "速算深色模式主畫面",
+    "arithzo.screens.4.alt": "速算深色模式挑戰選擇畫面",
+    "arithzo.footer.tagline": "為學生打造的專注學習遊戲。",
+    "privacy.arithzo.kicker": "隱私",
+    "privacy.arithzo.title": "隱私政策",
+    "privacy.arithzo.intro": "此頁面包含速算的隱私政策。",
+    "privacy.arithzo.body": "速算不收集、儲存或傳輸任何個人數據。應用活動與學習進度資料僅在您的裝置上本地處理與儲存。打賞（應用內購買）由 Apple 安全處理；開發者無法訪問您的支付資訊或個人資訊。",
+    "footer.privacy": "查看隱私政策"
   },
 
   ar: {
@@ -316,17 +442,61 @@ const TRANSLATIONS = {
   const THEME_STORAGE_KEY = "site-theme";
   const DEFAULT_LOCALE = "en";
   const SCREENSHOTS = {
-    en: {
-      dashboard: "assets/images/localized/acidicslime-dashboard-en.png",
-      settings: "assets/images/localized/acidicslime-settings-en.png"
+    app: {
+      en: {
+        dashboard: "assets/images/localized/acidicslime-dashboard-en.png",
+        settings: "assets/images/localized/acidicslime-settings-en.png"
+      },
+      ja: {
+        dashboard: "assets/images/localized/acidicslime-dashboard-ja.png",
+        settings: "assets/images/localized/acidicslime-settings-ja.png"
+      },
+      "zh-Hans": {
+        dashboard: "assets/images/localized/acidicslime-dashboard-zh-Hans.png",
+        settings: "assets/images/localized/acidicslime-settings-zh-Hans.png"
+      }
     },
-    ja: {
-      dashboard: "assets/images/localized/acidicslime-dashboard-ja.png",
-      settings: "assets/images/localized/acidicslime-settings-ja.png"
-    },
-    "zh-Hans": {
-      dashboard: "assets/images/localized/acidicslime-dashboard-zh-Hans.png",
-      settings: "assets/images/localized/acidicslime-settings-zh-Hans.png"
+    arithzo: {
+      en: {
+        light: {
+          screen1: "assets/images/localized/arithzo-gallery-light-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-light-practice.jpg"
+        },
+        dark: {
+          screen1: "assets/images/localized/arithzo-gallery-dark-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-dark-challenge.jpg"
+        }
+      },
+      ja: {
+        light: {
+          screen1: "assets/images/localized/arithzo-gallery-light-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-light-practice.jpg"
+        },
+        dark: {
+          screen1: "assets/images/localized/arithzo-gallery-dark-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-dark-challenge.jpg"
+        }
+      },
+      "zh-Hans": {
+        light: {
+          screen1: "assets/images/localized/arithzo-gallery-light-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-light-practice.jpg"
+        },
+        dark: {
+          screen1: "assets/images/localized/arithzo-gallery-dark-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-dark-challenge.jpg"
+        }
+      },
+      "zh-Hant": {
+        light: {
+          screen1: "assets/images/localized/arithzo-gallery-light-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-light-practice.jpg"
+        },
+        dark: {
+          screen1: "assets/images/localized/arithzo-gallery-dark-main.jpg",
+          screen2: "assets/images/localized/arithzo-gallery-dark-challenge.jpg"
+        }
+      }
     }
   };
 
@@ -413,7 +583,18 @@ const TRANSLATIONS = {
   };
 
   const applyLocalizedScreenshots = (currentLocale) => {
-    const shots = SCREENSHOTS[currentLocale] || SCREENSHOTS[DEFAULT_LOCALE];
+    const pageKey = document.documentElement.dataset.page || "app";
+    const pageShots = SCREENSHOTS[pageKey];
+    if (!pageShots) return;
+
+    const localeShots = pageShots[currentLocale] || pageShots[DEFAULT_LOCALE];
+    if (!localeShots) return;
+
+    const shots = (localeShots.light && localeShots.dark)
+      ? (localeShots[theme] || localeShots.light)
+      : localeShots;
+    if (!shots) return;
+
     document.querySelectorAll("[data-shot]").forEach((image) => {
       const shot = image.dataset.shot;
       const src = shots[shot];
@@ -446,6 +627,19 @@ const TRANSLATIONS = {
     });
   };
 
+  const applyThemeAwareAssets = (currentTheme) => {
+    document.querySelectorAll("[data-theme-asset-light][data-theme-asset-dark]").forEach((element) => {
+      const light = element.getAttribute("data-theme-asset-light");
+      const dark = element.getAttribute("data-theme-asset-dark");
+      if (!light || !dark) return;
+
+      const nextSrc = currentTheme === "dark" ? dark : light;
+      if (element.getAttribute("src") !== nextSrc) {
+        element.setAttribute("src", nextSrc);
+      }
+    });
+  };
+
   const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   let theme = safeGet(THEME_STORAGE_KEY);
   if (theme !== "light" && theme !== "dark") {
@@ -456,6 +650,8 @@ const TRANSLATIONS = {
     theme = value === "dark" ? "dark" : "light";
     document.documentElement.dataset.theme = theme;
     safeSet(THEME_STORAGE_KEY, theme);
+    applyThemeAwareAssets(theme);
+    applyLocalizedScreenshots(locale);
 
     const themeButton = document.getElementById("theme-toggle");
     if (themeButton) {
