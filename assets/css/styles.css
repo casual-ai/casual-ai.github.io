@@ -238,6 +238,16 @@ main {
   opacity: 0.94;
 }
 
+.app-store-link-static {
+  pointer-events: none;
+}
+
+.app-store-link-static:hover,
+.app-store-link-static:focus-visible {
+  transform: none;
+  opacity: 1;
+}
+
 .app-store-badge {
   display: block;
   width: clamp(10.5rem, 24vw, 13rem);
@@ -286,6 +296,11 @@ main {
   line-height: 1.1;
   letter-spacing: -0.02em;
   max-width: 24ch;
+}
+
+.availability-platform {
+  margin: 0.8rem 0 1rem;
+  color: var(--text-muted);
 }
 
 .feature-grid {
