@@ -349,6 +349,13 @@ main {
   font-size: 0.92rem;
 }
 
+.legal-note {
+  margin: 1.2rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  max-width: 78ch;
+}
+
 .name-grid {
   margin-top: 1.2rem;
   display: grid;
