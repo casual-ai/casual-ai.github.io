@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-page="offgrid-gallery" data-title-key="meta.offgridGallery.title">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offgrid Gallery | Private Local Photo Library</title>
+  <meta name="description" data-i18n-attr="content:meta.offgridGallery.description" content="A private iPhone and iPad photo library with local storage, albums, duplicate cleanup, and optional App Lock.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner app-header-inner">
+      <a class="back-btn" href="index.html" data-localized-link data-i18n-attr="aria-label:controls.back,title:controls.back">←</a>
+      <div class="control-row">
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
+          <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
+          <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">JP</button>
+          <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
+          <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
+        </div>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <img class="hero-logo" src="assets/images/offgrid-gallery-icon.png" alt="Offgrid Gallery app icon" data-i18n-attr="alt:offgridGallery.iconAlt">
+        <h1 data-i18n="offgridGallery.title">Offgrid Gallery</h1>
+        <p class="hero-subtitle" data-i18n="offgridGallery.subtitle">A private local photo library for iPhone and iPad</p>
+        <p class="coming-soon-label" data-i18n="offgridGallery.store.comingSoon">Coming to App Store</p>
+        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
+      </div>
+    </section>
+
+    <section class="container section" id="overview">
+      <p class="kicker" data-i18n="offgridGallery.overview.kicker">Overview</p>
+      <h2 class="section-title" data-i18n="offgridGallery.overview.title">Keep a separate photo library that stays under your control.</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3 data-i18n="offgridGallery.feature.1.title">Local-first library</h3>
+          <p data-i18n="offgridGallery.feature.1.body">Import photos into a private library with originals, thumbnails, and metadata stored on your device.</p>
+        </article>
+        <article class="feature-card">
+          <h3 data-i18n="offgridGallery.feature.2.title">Organize and clean up</h3>
+          <p data-i18n="offgridGallery.feature.2.body">Use search, filters, custom albums, favorites, date and location grouping, duplicate detection, and Recently Deleted.</p>
+        </article>
+        <article class="feature-card">
+          <h3 data-i18n="offgridGallery.feature.3.title">Private access</h3>
+          <p data-i18n="offgridGallery.feature.3.body">Optional Face ID or Touch ID App Lock helps keep your library private, with share-extension imports for quick capture.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="offgridGallery.footer.tagline">A private place for photos you want to keep separate.</p>
+      <a href="privacy/offgrid-gallery/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
