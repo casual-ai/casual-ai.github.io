@@ -584,6 +584,29 @@ const TRANSLATIONS = {
     "privacy.arithzo.intro": "此页面包含速算达人的隐私政策。",
     "privacy.arithzo.body": "速算达人不收集、存储或传输任何个人数据。应用内学习记录和进度数据仅在您的设备本地处理与保存。打赏（应用内购买）由 Apple 安全处理；开发者无法访问您的支付信息或个人信息。",
 
+    "meta.chineseVocabularyBook.title": "英语单词本：中高考词汇 | 离线背单词",
+    "meta.chineseVocabularyBook.description": "7000 个英语词汇，离线学习，科学 SRS 复习。适合考试备考与日常积累。",
+    "meta.privacy.chineseVocabularyBook.title": "隐私政策 | 英语单词本：中高考词汇",
+    "meta.privacy.chineseVocabularyBook.description": "英语单词本：中高考词汇隐私政策。",
+    "chineseVocabularyBook.iconAlt": "英语单词本：中高考词汇应用图标",
+    "chineseVocabularyBook.title": "英语单词本：中高考词汇",
+    "chineseVocabularyBook.subtitle": "离线背单词，科学复习更牢固",
+    "chineseVocabularyBook.store.appStore": "在 App Store 中打开英语单词本：中高考词汇",
+    "chineseVocabularyBook.store.badgeAlt": "在 App Store 下载英语单词本：中高考词汇",
+    "chineseVocabularyBook.overview.kicker": "概览",
+    "chineseVocabularyBook.overview.title": "7000 个英语词汇，离线学习，科学复习。",
+    "chineseVocabularyBook.feature.1.title": "7000 个高频词汇",
+    "chineseVocabularyBook.feature.1.body": "从基础到进阶分为 7 个等级，覆盖校园学习、升学考试和常见英语阅读场景。",
+    "chineseVocabularyBook.feature.2.title": "科学间隔重复 SRS",
+    "chineseVocabularyBook.feature.2.body": "根据你的掌握情况自动安排复习时间，让熟悉和不熟悉的单词以合适节奏出现。",
+    "chineseVocabularyBook.feature.3.title": "多种练习方式",
+    "chineseVocabularyBook.feature.3.body": "闪卡、选择题、拼写练习、复习队列和 AI 填空，配合学习图表、成就徽章与桌面小组件。",
+    "chineseVocabularyBook.footer.tagline": "你的随身离线英语词汇本。",
+    "privacy.chineseVocabularyBook.kicker": "隐私",
+    "privacy.chineseVocabularyBook.title": "隐私政策",
+    "privacy.chineseVocabularyBook.intro": "此页面包含英语单词本：中高考词汇的隐私政策。",
+    "privacy.chineseVocabularyBook.body": "英语单词本：中高考词汇不会向开发者运营的服务器收集、存储或传输个人数据。闪卡进度、SRS 复习计划、测试结果、拼写练习、AI 填空记录、经验值、连续学习记录、成就和设置均保存在您的设备本地。如您的设备启用 iCloud，同步数据会通过 Apple 的 iCloud 服务在您的设备之间同步，数据不会经过开发者服务器。应用不使用第三方分析、用户账号或开发者运营的远程服务。",
+
     "meta.jlptbook.title": "JLPT Book | 学习JLPT N5–N1词汇与语法",
     "meta.jlptbook.description": "离线学习JLPT N5–N1词汇与语法，配备间隔重复、连续打卡和成就系统。",
     "meta.privacy.jlptbook.title": "隐私政策 | JLPT Book",
@@ -821,6 +844,29 @@ const TRANSLATIONS = {
     "privacy.arithzo.title": "隱私政策",
     "privacy.arithzo.intro": "此頁面包含速算達人的隱私政策。",
     "privacy.arithzo.body": "速算達人不收集、儲存或傳輸任何個人數據。應用活動與學習進度資料僅在您的裝置上本地處理與儲存。打賞（應用內購買）由 Apple 安全處理；開發者無法訪問您的支付資訊或個人資訊。",
+
+    "meta.chineseVocabularyBook.title": "英語單字本：考試詞彙7000 | 離線背單字",
+    "meta.chineseVocabularyBook.description": "7000 個英語詞彙，離線學習，科學 SRS 複習。適合考試準備與日常累積。",
+    "meta.privacy.chineseVocabularyBook.title": "隱私政策 | 英語單字本：考試詞彙7000",
+    "meta.privacy.chineseVocabularyBook.description": "英語單字本：考試詞彙7000隱私政策。",
+    "chineseVocabularyBook.iconAlt": "英語單字本：考試詞彙7000應用程式圖示",
+    "chineseVocabularyBook.title": "英語單字本：考試詞彙7000",
+    "chineseVocabularyBook.subtitle": "離線背單字，科學複習更牢固",
+    "chineseVocabularyBook.store.appStore": "在 App Store 中開啟英語單字本：考試詞彙7000",
+    "chineseVocabularyBook.store.badgeAlt": "在 App Store 下載英語單字本：考試詞彙7000",
+    "chineseVocabularyBook.overview.kicker": "概覽",
+    "chineseVocabularyBook.overview.title": "7000 個英語詞彙，離線學習，科學複習。",
+    "chineseVocabularyBook.feature.1.title": "7000 個高頻詞彙",
+    "chineseVocabularyBook.feature.1.body": "從基礎到進階分為 7 個等級，涵蓋校園學習、考試準備和常見英語閱讀情境。",
+    "chineseVocabularyBook.feature.2.title": "科學間隔重複 SRS",
+    "chineseVocabularyBook.feature.2.body": "根據你的掌握情況自動安排複習時間，讓熟悉和不熟悉的單字以合適節奏出現。",
+    "chineseVocabularyBook.feature.3.title": "多種練習方式",
+    "chineseVocabularyBook.feature.3.body": "閃卡、選擇題、拼字練習、複習佇列和 AI 填空，配合學習圖表、成就徽章與主畫面小工具。",
+    "chineseVocabularyBook.footer.tagline": "你的隨身離線英語詞彙本。",
+    "privacy.chineseVocabularyBook.kicker": "隱私",
+    "privacy.chineseVocabularyBook.title": "隱私政策",
+    "privacy.chineseVocabularyBook.intro": "此頁面包含英語單字本：考試詞彙7000的隱私政策。",
+    "privacy.chineseVocabularyBook.body": "英語單字本：考試詞彙7000不會向開發者營運的伺服器收集、儲存或傳輸個人數據。閃卡進度、SRS 複習計畫、測驗結果、拼字練習、AI 填空記錄、經驗值、連續學習記錄、成就和設定均儲存在您的裝置本地。如您的裝置啟用 iCloud，同步資料會透過 Apple 的 iCloud 服務在您的裝置之間同步，資料不會經過開發者伺服器。應用程式不使用第三方分析、用戶帳號或開發者營運的遠端服務。",
 
     "meta.jlptbook.title": "JLPT Book | 學習JLPT N5–N1詞彙與語法",
     "meta.jlptbook.description": "離線學習JLPT N5–N1詞彙與語法，配備間隔重複、連續打卡和成就系統。",
@@ -1063,10 +1109,25 @@ const TRANSLATIONS = {
   const queryLocale = new URLSearchParams(window.location.search).get("lang");
   const storedLocale = safeGet(LOCALE_STORAGE_KEY);
   const browserLocale = navigator.language || navigator.userLanguage;
-  let locale = normalizeLocale(queryLocale) || normalizeLocale(storedLocale) || normalizeLocale(browserLocale) || DEFAULT_LOCALE;
+  const pageSupportedLocales = (document.documentElement.dataset.supportedLocales || "")
+    .split(",")
+    .map((value) => normalizeLocale(value.trim()))
+    .filter(Boolean);
+  const pageDefaultLocale = normalizeLocale(document.documentElement.dataset.defaultLocale) || DEFAULT_LOCALE;
+  const pageAllowsLocale = (value) => !pageSupportedLocales.length || pageSupportedLocales.includes(value);
+  const localeCandidates = [
+    normalizeLocale(queryLocale),
+    normalizeLocale(storedLocale),
+    normalizeLocale(browserLocale),
+    pageDefaultLocale,
+    DEFAULT_LOCALE
+  ];
+  let locale = localeCandidates.find((value) => (
+    value && SUPPORTED_LOCALES.includes(value) && pageAllowsLocale(value)
+  ));
 
-  if (!SUPPORTED_LOCALES.includes(locale)) {
-    locale = DEFAULT_LOCALE;
+  if (!locale) {
+    locale = pageSupportedLocales[0] || DEFAULT_LOCALE;
   }
 
   const applyLocalizedLinks = (currentLocale) => {
