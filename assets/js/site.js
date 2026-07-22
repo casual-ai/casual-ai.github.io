@@ -1328,19 +1328,6 @@ const TRANSLATIONS = {
     });
   };
 
-  const syncNameCards = (currentLocale) => {
-    const activeMap = {
-      en: ["en"],
-      ja: ["ja"],
-      "zh-Hans": ["zh-Hans", "zh-Hant"]
-    };
-
-    const active = new Set(activeMap[currentLocale] || []);
-    document.querySelectorAll("[data-name-locale]").forEach((card) => {
-      card.classList.toggle("is-current", active.has(card.dataset.nameLocale));
-    });
-  };
-
   const applyThemeAwareAssets = (currentTheme) => {
     document.querySelectorAll("[data-theme-asset-light][data-theme-asset-dark]").forEach((element) => {
       const light = element.getAttribute("data-theme-asset-light");
@@ -1379,7 +1366,6 @@ const TRANSLATIONS = {
   applyLocalizedLinks(locale);
   updateURLLocale(locale);
   syncLanguageButtons(locale);
-  syncNameCards(locale);
   applyTheme(theme);
 
   document.querySelectorAll(".lang-btn").forEach((button) => {
@@ -1394,7 +1380,6 @@ const TRANSLATIONS = {
       applyLocalizedLinks(locale);
       updateURLLocale(locale);
       syncLanguageButtons(locale);
-      syncNameCards(locale);
       applyTheme(theme);
     });
   });
@@ -1404,5 +1389,30 @@ const TRANSLATIONS = {
     themeButton.addEventListener("click", () => {
       applyTheme(theme === "dark" ? "light" : "dark");
     });
+  }
+
+  const header = document.querySelector(".site-header");
+  if (header) {
+    const setScrolled = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
+    setScrolled();
+    window.addEventListener("scroll", setScrolled, { passive: true });
+  }
+
+  const revealTargets = document.querySelectorAll(".reveal");
+  if (revealTargets.length) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      revealTargets.forEach((el) => el.classList.add("is-visible"));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+      revealTargets.forEach((el) => observer.observe(el));
+    }
   }
 })();
