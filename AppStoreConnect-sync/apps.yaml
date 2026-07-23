@@ -1,0 +1,94 @@
+# Maps each app's website page to the sibling repo that holds its real App
+# Store Connect metadata (managed there via the `asc` CLI). Used by sync.py
+# to pull the currently-live version's copy and screenshots for review before
+# hand-editing the site.
+#
+# `locales` maps ASC locale code -> site locale code. Only locales the site
+# actually renders for that page are listed; anything else ASC has for the
+# app (e.g. Acidic Slime's ar-SA/fr-FR/it-IT/ko-KR/zh-TW) is intentionally
+# left out here and skipped by the sync, not an error.
+#
+# Chess Kingdoms, Offgrid Web Saver, and the VocabularyBook repo's second
+# "chinese-vocabulary-book" ASC app are deliberately absent — see the plan
+# at ~/.claude/plans/sunny-discovering-sketch.md for why.
+
+apps:
+  acidic-slime:
+    page: acidic-slime.html
+    prefix: app
+    repo: ~/Projects/AcidicSlime
+    config: AppStoreConnect/asc-config.yaml
+    platform: MAC_OS
+    locales:
+      en-US: en
+      ja-JP: ja
+      zh-CN: zh-Hans
+
+  arithzo:
+    page: arithzo.html
+    prefix: arithzo
+    repo: ~/Projects/MathGame
+    config: AppStoreConnect/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+
+  vocabularybook:
+    page: vocabularybook.html
+    prefix: vocabularybook
+    repo: ~/Projects/VocabularyBook
+    config: AppStoreConnect/app-6763749802/asc-config.yaml
+    platform: IOS
+    locales:
+      ja: ja
+
+  jlptbook:
+    page: jlptbook.html
+    prefix: jlptbook
+    repo: ~/Projects/JapaneseVocabularyBook
+    config: AppStoreConnect/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+
+  pokepani:
+    page: pokepani.html
+    prefix: pokepani
+    repo: ~/Projects/CompanionForPokemonCard
+    config: AppStoreConnect/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      ko: ko
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+
+  doubleslab:
+    page: doubleslab.html
+    prefix: doubleslab
+    repo: ~/Projects/DamageCalc
+    config: AppStoreConnect/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+
+  offgrid-gallery:
+    page: offgrid-gallery.html
+    prefix: offgridGallery
+    repo: ~/Projects/PhotoBook
+    config: AppStoreConnect/ios/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
