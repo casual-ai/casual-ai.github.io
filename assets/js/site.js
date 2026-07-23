@@ -163,6 +163,11 @@ const TRANSLATIONS = {
     "pokepani.feature.3.title": "Stay on turn",
     "pokepani.feature.3.body": "Record Supporter, Stadium, Energy, Retreat, and End Turn actions alongside a configurable match timer.",
     "pokepani.legal": "Poképani is an unofficial companion app and is not affiliated with, endorsed, sponsored, or approved by Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company, or The Pokémon Company International. © 2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon and Pokémon character names are trademarks of Nintendo. Pokémon Trading Card Game is referenced only to describe compatibility.",
+    "pokepani.screens.kicker": "Screenshots",
+    "pokepani.screens.title": "One playmat for the whole match.",
+    "pokepani.screens.1.alt": "Poképani solo playmat",
+    "pokepani.screens.2.alt": "Poképani two-player playmat",
+    "pokepani.screens.3.alt": "Poképani coin flip result",
     "pokepani.footer.tagline": "A customizable companion for tabletop matches.",
     "privacy.pokepani.kicker": "Privacy",
     "privacy.pokepani.title": "Privacy Policy",
@@ -439,6 +444,11 @@ const TRANSLATIONS = {
     "pokepani.feature.3.title": "ターンをわかりやすく",
     "pokepani.feature.3.body": "サポート、スタジアム、エネルギー、にげる、ターン終了を、設定可能な対戦タイマーと一緒に記録できます。",
     "pokepani.legal": "ポケパニは非公式のコンパニオンアプリです。Nintendo、Creatures Inc.、GAME FREAK inc.、株式会社ポケモン、The Pokémon Company Internationalとの提携、承認、後援関係はありません。© 2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. PokémonおよびPokémonのキャラクター名はNintendoの商標です。Pokémon Trading Card Gameへの言及は互換性の説明のみを目的としています。",
+    "pokepani.screens.kicker": "スクリーンショット",
+    "pokepani.screens.title": "対戦のすべてを、ひとつのプレイマットで。",
+    "pokepani.screens.1.alt": "ポケパニのひとりプレイマット",
+    "pokepani.screens.2.alt": "ポケパニの2人用プレイマット",
+    "pokepani.screens.3.alt": "ポケパニのコイントス結果",
     "pokepani.footer.tagline": "テーブル対戦のためのカスタマイズ可能なコンパニオン。",
     "privacy.pokepani.kicker": "プライバシー",
     "privacy.pokepani.title": "プライバシーポリシー",
@@ -737,6 +747,11 @@ const TRANSLATIONS = {
     "pokepani.feature.3.title": "清晰记录回合",
     "pokepani.feature.3.body": "记录支援者卡、竞技场卡、能量、撤退和结束回合，并使用可设置的对局计时器。",
     "pokepani.legal": "卡牌宝贝是非官方辅助应用，与Nintendo、Creatures Inc.、GAME FREAK inc.、The Pokémon Company或The Pokémon Company International无隶属、认可、赞助或批准关系。© 2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon及Pokémon角色名称是Nintendo的商标。提及Pokémon Trading Card Game仅用于说明兼容性。",
+    "pokepani.screens.kicker": "截图",
+    "pokepani.screens.title": "一张卡垫，掌控整场对战。",
+    "pokepani.screens.1.alt": "卡牌宝贝单人对战卡垫",
+    "pokepani.screens.2.alt": "卡牌宝贝双人对战卡垫",
+    "pokepani.screens.3.alt": "卡牌宝贝掷硬币结果",
     "pokepani.footer.tagline": "为桌面对局打造的可自定义辅助应用。",
     "privacy.pokepani.kicker": "隐私",
     "privacy.pokepani.title": "隐私政策",
@@ -879,6 +894,11 @@ const TRANSLATIONS = {
     "pokepani.feature.3.title": "명확한 턴 기록",
     "pokepani.feature.3.body": "서포트, 스타디움, 에너지, 후퇴, 턴 종료를 설정 가능한 대전 타이머와 함께 기록하세요.",
     "pokepani.legal": "포케파니는 비공식 보조 앱입니다. Nintendo, Creatures Inc., GAME FREAK inc., The Pokémon Company 또는 The Pokémon Company International과 제휴하거나 승인, 후원받지 않았습니다. © 2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon 및 Pokémon 캐릭터 이름은 Nintendo의 상표입니다. Pokémon Trading Card Game은 호환성 설명 목적으로만 언급됩니다.",
+    "pokepani.screens.kicker": "스크린샷",
+    "pokepani.screens.title": "대전의 모든 것을 하나의 플레이매트에서.",
+    "pokepani.screens.1.alt": "포케파니 1인용 플레이매트",
+    "pokepani.screens.2.alt": "포케파니 2인용 플레이매트",
+    "pokepani.screens.3.alt": "포케파니 동전 던지기 결과",
     "pokepani.footer.tagline": "테이블 대전을 위한 맞춤형 보조 앱.",
     "privacy.pokepani.kicker": "개인정보",
     "privacy.pokepani.title": "개인정보 처리방침",
@@ -1039,6 +1059,11 @@ const TRANSLATIONS = {
     "pokepani.feature.3.title": "清楚記錄回合",
     "pokepani.feature.3.body": "記錄支援者卡、競技場卡、能量、撤退和結束回合，並使用可設定的對局計時器。",
     "pokepani.legal": "卡牌宝贝是非官方輔助應用程式，與Nintendo、Creatures Inc.、GAME FREAK inc.、The Pokémon Company或The Pokémon Company International無隸屬、認可、贊助或批准關係。© 2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. Pokémon及Pokémon角色名稱是Nintendo的商標。提及Pokémon Trading Card Game僅用於說明相容性。",
+    "pokepani.screens.kicker": "截圖",
+    "pokepani.screens.title": "一張桌墊，掌控整場對戰。",
+    "pokepani.screens.1.alt": "卡牌宝贝單人對戰桌墊",
+    "pokepani.screens.2.alt": "卡牌宝贝雙人對戰桌墊",
+    "pokepani.screens.3.alt": "卡牌宝贝擲硬幣結果",
     "pokepani.footer.tagline": "為桌面對局打造的可自訂輔助應用程式。",
     "privacy.pokepani.kicker": "隱私",
     "privacy.pokepani.title": "隱私政策",
@@ -1206,6 +1231,33 @@ const TRANSLATIONS = {
         shot3: "assets/images/appstore/jlptbook/zh-Hant-03_review.png",
         shot4: "assets/images/appstore/jlptbook/zh-Hant-04_tests.png",
         shot5: "assets/images/appstore/jlptbook/zh-Hant-05_settings.png"
+      }
+    },
+    pokepani: {
+      en: {
+        shot1: "assets/images/appstore/pokepani/en-01_solo.png",
+        shot2: "assets/images/appstore/pokepani/en-02_two_player.png",
+        shot3: "assets/images/appstore/pokepani/en-03_coin_result.png"
+      },
+      ja: {
+        shot1: "assets/images/appstore/pokepani/ja-01_solo.png",
+        shot2: "assets/images/appstore/pokepani/ja-02_two_player.png",
+        shot3: "assets/images/appstore/pokepani/ja-03_coin_result.png"
+      },
+      ko: {
+        shot1: "assets/images/appstore/pokepani/ko-01_solo.png",
+        shot2: "assets/images/appstore/pokepani/ko-02_two_player.png",
+        shot3: "assets/images/appstore/pokepani/ko-03_coin_result.png"
+      },
+      "zh-Hans": {
+        shot1: "assets/images/appstore/pokepani/zh-Hans-01_solo.png",
+        shot2: "assets/images/appstore/pokepani/zh-Hans-02_two_player.png",
+        shot3: "assets/images/appstore/pokepani/zh-Hans-03_coin_result.png"
+      },
+      "zh-Hant": {
+        shot1: "assets/images/appstore/pokepani/zh-Hant-01_solo.png",
+        shot2: "assets/images/appstore/pokepani/zh-Hant-02_two_player.png",
+        shot3: "assets/images/appstore/pokepani/zh-Hant-03_coin_result.png"
       }
     },
     arithzo: {
