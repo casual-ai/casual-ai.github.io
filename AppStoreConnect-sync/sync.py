@@ -1,19 +1,27 @@
 #!/usr/bin/env python3
 """Fetch each app's currently-live App Store Connect metadata + screenshots
-(via the `asc` CLI, in that app's own repo) and print a review report for
-the website's marketing copy. Read-only against the website repo — this
-never edits site.js/HTML itself. See apps.yaml for the app -> repo mapping,
-and ~/.claude/plans/sunny-discovering-sketch.md for the full pipeline design.
+(via the `asc` CLI) and print a review report for the website's marketing
+copy. Uses `asc fetch --output-dir` to write into a scratch temp directory —
+the app's own repo is never touched. Read-only against the website repo too
+— this never edits site.js/HTML itself. See apps.yaml for the app -> repo
+mapping, and ~/.claude/plans/sunny-discovering-sketch.md for the full
+pipeline design.
 
 Usage:
     sync.py <app-key>          # fetch + report one app
     sync.py --all              # fetch + report every app in apps.yaml
     sync.py --list             # list configured app keys
+
+Each run prints the scratch directory it wrote to (metadata.asc +
+screenshots/) — grab any screenshots you want from there while doing the
+content review, then delete it yourself; nothing is cleaned up automatically
+since the screenshots are still needed at that point.
 """
 import argparse
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 import yaml
@@ -76,22 +84,11 @@ def parse_dsl_metadata(path):
     return locales
 
 
-def load_dsl(repo_root, locales_wanted):
-    metadata_path = repo_root / "metadata.asc"
+def load_dsl(root):
+    metadata_path = root / "metadata.asc"
     if not metadata_path.exists():
         return {}
     return parse_dsl_metadata(metadata_path)
-
-
-def load_legacy(repo_root, locales_wanted):
-    out = {}
-    for locale in locales_wanted:
-        path = repo_root / "locales" / locale / "metadata.yaml"
-        if not path.exists():
-            continue
-        with open(path, encoding="utf-8") as f:
-            out[locale] = yaml.safe_load(f) or {}
-    return out
 
 
 def sync_one(key, entry):
@@ -99,19 +96,20 @@ def sync_one(key, entry):
     config_path = repo / entry["config"]
     platform = entry["platform"]
     locale_map = entry["locales"]
-    asc_locales = list(locale_map.keys())
 
     if not config_path.exists():
         print(f"!! [{key}] config not found: {config_path}", file=sys.stderr)
         return False
 
-    print(f"\n{'=' * 70}\n{key}  ({entry['page']})\n{'=' * 70}")
-    print(f"repo: {repo}")
+    scratch = Path(tempfile.mkdtemp(prefix=f"asc-sync-{key}-"))
 
-    # 1. Metadata: pull the live version into the app's own repo.
+    print(f"\n{'=' * 70}\n{key}  ({entry['page']})\n{'=' * 70}")
+    print(f"repo: {repo} (not modified — writing to {scratch} instead)")
+
+    # 1. Metadata: pull the live version into a scratch dir, not the app's own repo.
     r = run_asc([
         "fetch", "--live", "--config", str(config_path),
-        "--platform", platform, "--write-baseline",
+        "--platform", platform, "--output-dir", str(scratch),
     ])
     print(r.stdout, end="")
     if r.returncode != 0:
@@ -119,10 +117,10 @@ def sync_one(key, entry):
         print(f"!! [{key}] metadata fetch failed", file=sys.stderr)
         return False
 
-    # 2. Screenshots: primary device per locale, into the same repo.
+    # 2. Screenshots: primary device per locale, into the same scratch dir.
     r = run_asc([
         "fetch", "--live", "--screenshots", "--config", str(config_path),
-        "--platform", platform,
+        "--platform", platform, "--output-dir", str(scratch),
     ])
     print(r.stdout, end="")
     if r.returncode != 0:
@@ -131,9 +129,7 @@ def sync_one(key, entry):
         return False
 
     # 3. Read back what was just written and report it per site locale.
-    metadata_root = config_path.parent
-    is_dsl = (metadata_root / "metadata.asc").exists()
-    data = load_dsl(metadata_root, asc_locales) if is_dsl else load_legacy(metadata_root, asc_locales)
+    data = load_dsl(scratch)
 
     for asc_locale, site_locale in locale_map.items():
         loc_data = data.get(asc_locale)
@@ -146,6 +142,9 @@ def sync_one(key, entry):
             if value:
                 shown = value if len(value) < 300 else value[:300] + "…"
                 print(f"  {field}: {shown}")
+
+    print(f"\n  Screenshots (if any) are in {scratch / 'screenshots'} — copy what you need, "
+          f"then `rm -rf {scratch}` when done with this app.")
 
     return True
 
