@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offgrid Gallery 1.3 — Featuring Brief</title>
+<meta name="description" content="What ships in Offgrid Gallery 1.3 on iPhone, iPad and Mac: People, Private Smart Search, Quality Capture and Subject Studio — all on device.">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbf8f3;
+    --panel: #ffffff;
+    --ink: #1c1917;
+    --muted: #6b6560;
+    --rule: #e8e2d9;
+    --accent: #b1613c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171513;
+      --panel: #201d1a;
+      --ink: #f2ede7;
+      --muted: #a49c94;
+      --rule: #322d28;
+      --accent: #d98a63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 96px; }
+  header.top { padding: 56px 0 8px; }
+  .eyebrow {
+    font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin: 0 0 12px;
+  }
+  h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -.02em; }
+  .lede { font-size: 20px; color: var(--muted); margin: 0 0 28px; max-width: 62ch; }
+  .keyart { width: 100%; height: auto; border-radius: 14px; display: block; margin: 8px 0 40px; }
+  .facts {
+    display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 18px 0;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    margin: 0 0 48px; font-size: 15px; color: var(--muted);
+  }
+  .facts b { color: var(--ink); font-weight: 600; }
+  section { margin: 0 0 56px; }
+  h2 { font-size: 26px; letter-spacing: -.01em; margin: 0 0 6px; }
+  .plat { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+  p { margin: 0 0 16px; max-width: 68ch; }
+  figure { margin: 24px 0 0; }
+  figure img {
+    width: 100%; height: auto; display: block;
+    border: 1px solid var(--rule); border-radius: 12px; background: var(--panel);
+  }
+  figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; }
+  .shots { display: grid; gap: 20px; }
+  @media (min-width: 720px) { .shots.two { grid-template-columns: 1fr 1fr; align-items: start; } }
+  ul { margin: 0 0 16px; padding-left: 20px; max-width: 68ch; }
+  li { margin-bottom: 8px; }
+  .privacy {
+    background: var(--panel); border: 1px solid var(--rule);
+    border-radius: 14px; padding: 24px 26px;
+  }
+  .privacy h2 { margin-top: 0; }
+  footer {
+    border-top: 1px solid var(--rule); padding-top: 24px;
+    font-size: 15px; color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+  .narrow { max-width: 420px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <p class="eyebrow">Featuring brief</p>
+    <h1>Offgrid Gallery 1.3</h1>
+    <p class="lede">A local-first photo vault that finally recognises the people in your photos — without an account, a server, or a single byte leaving the device.</p>
+    <img class="keyart" src="assets/images/offgrid-gallery-1.3-keyart.png" alt="Illustration of a Mac window showing a photo grid beside a sidebar of people, with faint lines linking photos to each person.">
+    <div class="facts">
+      <span><b>Version</b> 1.3</span>
+      <span><b>Platforms</b> iPhone, iPad, Mac</span>
+      <span><b>Languages</b> EN, JA, ZH-Hans, ZH-Hant</span>
+      <span><b>Apple ID</b> 6785182413</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="plat">Mac</p>
+    <h2>People, and the right to correct it</h2>
+    <p>Offgrid Gallery finds the faces in a vault's photos and groups the ones that look like the same person — on the Mac, one vault at a time. It is off until switched on, and it skips photos the user has hidden.</p>
+    <p>Recognition is only half of it. Grouping gets things wrong, so every part of it can be corrected: name someone from a photo they are in, pin them to the sidebar, split a group that turned out to be two people, forget or delete them, or file any photo under anyone by dragging it there.</p>
+    <ul>
+      <li>Face data lives inside that vault's own folder — never in iCloud Drive, even when the photos are, and never in a backup.</li>
+      <li>People never span vaults. Switching vaults shows that vault's own people and nothing else.</li>
+      <li>Deleting the vault deletes the face data with it, and it can be deleted on its own at any time.</li>
+    </ul>
+    <div class="shots two">
+      <figure>
+        <img src="assets/images/offgrid-gallery-1.3-people.png" alt="The All People view showing three grouped people, two named Amara and David, one still Unnamed Person, with Amara pinned to the sidebar.">
+        <figcaption>Three people found across nine photos. Two named, one left as the app found it, one pinned to the sidebar.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/offgrid-gallery-1.3-person.png" alt="Amara's photos: three pictures of the same person in different settings.">
+        <figcaption>Opening a person shows every photo filed under them.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <p class="plat">Mac</p>
+    <h2>Search that reads the photo, on the machine holding it</h2>
+    <p>Private Smart Search indexes the text inside a photo, what Vision recognises in it, and a visual feature print for ranking similarity — into a separate <code>Search.sqlite</code> kept inside each vault. On the Mac an on-device model can also write a one-sentence description of each photo, which is what makes “what does this photo show” searchable at all.</p>
+    <p>On macOS 27, Visual Intelligence can answer from the active vault — but only once the user has turned Smart Search on. Without that opt-in there is no index, and the vault is not searched on behalf of a system feature nobody asked for. Subject Studio and Find Similar arrive on the Mac in this release too.</p>
+  </section>
+
+  <section>
+    <p class="plat">iPhone and iPad</p>
+    <h2>Intelligence that stays opt-in</h2>
+    <p>The same private search comes to iPhone and iPad, off until the user turns it on and acknowledges what the first pass costs in battery. Quality Capture makes the built-in camera worth using — 24 MP or 48 MP stills and 720p, 1080p or 4K video, chosen from an always-visible Silent/Quality control that falls back gracefully on cameras that cannot reach the chosen resolution. On iOS 27, Subject Studio lifts a subject with iterative Vision segmentation and hands back a transparent PNG, a vault item, or a subject-aware wallpaper.</p>
+    <p>Shortcuts open Search or the Camera and stop there. No media, captions or vault names ever reach system surfaces.</p>
+    <figure class="narrow">
+      <img src="assets/images/offgrid-gallery-1.3-ios-settings.png" alt="Offgrid Gallery Settings on iPhone, showing Manage Vaults, an App Settings and Current Vault switch, and Private Smart Search turned off.">
+      <figcaption>Settings separates app-wide preferences from the current vault. Private Smart Search ships off.</figcaption>
+    </figure>
+  </section>
+
+  <section class="privacy">
+    <h2>What the app does not do</h2>
+    <ul>
+      <li>No account, no sign-in, no server, no analytics, no ads, no third-party SDK — Apple frameworks only.</li>
+      <li>Nothing is published to Spotlight, searchable activities, or any other system index.</li>
+      <li>Face grouping, photo descriptions, OCR and similarity ranking all run on the device.</li>
+      <li>Every intelligence feature is off by default and can be deleted independently of the photos.</li>
+      <li>Full-resolution media uses complete file protection and is excluded from iCloud backup.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Offgrid Gallery is built by a solo developer.<br>
+    <a href="https://casual-ai.github.io/offgrid-gallery.html">Product page</a> ·
+    <a href="https://casual-ai.github.io/privacy/offgrid-gallery/">Privacy policy</a> ·
+    <a href="https://apps.apple.com/us/app/offgrid-gallery-photo-vault/id6785182413">App Store</a></p>
+    <p>Screenshots on this page were captured from a purpose-built demo vault. The people in them are synthetic and depict no real person.</p>
+  </footer>
+
+</div>
+</body>
+</html>
