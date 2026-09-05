@@ -12,7 +12,8 @@ const TRANSLATIONS = {
     "controls.theme.toggle": "Switch light or dark theme",
 
     "meta.home.title": "Apps",
-    "meta.home.description": "App gallery",
+    "meta.home.description": "Useful apps for learning, creativity, games, and focused everyday tasks.",
+    "meta.offgridGallery13.title": "Offgrid Gallery 1.3 — Feature Brief",
     "meta.app.title": "Acidic Slime | macOS Xcode Storage Cleaner",
     "meta.app.description": "Acidic Slime helps you scan and clean Xcode storage on macOS.",
     "meta.arithzo.title": "Arithzo | Mental Arithmetic Training for Elementary Students",
@@ -22,9 +23,25 @@ const TRANSLATIONS = {
     "meta.privacy.arithzo.title": "Privacy Policy | Arithzo",
     "meta.privacy.arithzo.description": "Privacy policy for Arithzo.",
 
-    "home.kicker": "Independent Developer Apps",
-    "home.title": "Practical macOS apps built with care.",
-    "home.body": "We build focused tools that help developers move faster without giving up reliability or clarity.",
+    "home.title": "Useful apps, made with care.",
+    "home.body": "Learning tools, games, and focused utilities for iPhone, iPad, and Mac.",
+    "home.card.vocabularybook.title": "Vocabulary Book",
+    "home.card.vocabularybook.subtitle": "English vocabulary for Japanese entrance exams",
+    "home.card.chineseVocabularyBook.title": "English Vocabulary Book",
+    "home.card.chineseVocabularyBook.subtitle": "Offline vocabulary study for Chinese exams",
+    "home.card.chineseVocabularyBook.aria": "English Vocabulary Book for Chinese exams",
+    "home.card.jlptbook.title": "JLPT Book",
+    "home.card.jlptbook.subtitle": "Vocabulary, kanji, and grammar from N5 to N1",
+    "home.card.offgridGallery.title": "Offgrid Gallery",
+    "home.card.offgridGallery.subtitle": "A private, on-device photo library",
+    "home.card.pokepani.title": "Poképani",
+    "home.card.pokepani.subtitle": "Playmat and match tools for Pokémon TCG",
+    "home.card.doubleslab.title": "DoublesLab",
+    "home.card.doubleslab.subtitle": "Damage calculations and team planning for Pokémon Champions VGC",
+    "home.card.arithzo.title": "Arithzo",
+    "home.card.arithzo.subtitle": "Fast, game-like mental math practice",
+    "home.card.acidicSlime.title": "Acidic Slime",
+    "home.card.acidicSlime.subtitle": "A focused Xcode storage cleaner for Mac",
     "home.cta.apps": "Browse app gallery",
     "home.cta.privacy": "Privacy policy",
     "home.highlights": "Highlights",
@@ -33,7 +50,7 @@ const TRANSLATIONS = {
     "home.trust.3": "Safe cleanup controls",
 
     "gallery.kicker": "App Gallery",
-    "gallery.title": "Tap an icon to open app details.",
+    "gallery.title": "Browse apps",
     "gallery.body": "This homepage is now a scalable app gallery. As new apps launch, their icons will appear here.",
     "gallery.aria": "Application icon gallery",
     "gallery.acidicSlime": "Xcode storage cleaner for macOS",
@@ -112,6 +129,10 @@ const TRANSLATIONS = {
     "privacy.arithzo.title": "Privacy Policy",
     "privacy.arithzo.intro": "This page contains the privacy policy for Arithzo.",
     "privacy.arithzo.body": "Arithzo does not collect, store, or transmit any personal data. All app activity and progress data are processed and stored locally on your device. In-app purchases for tips are handled securely by Apple; the developer does not have access to your payment details or personal information.",
+
+    "gallery.vocabularybook": "Vocabulary Book: English vocabulary for Japanese entrance exams",
+    "vocabularybook.iconAlt": "Vocabulary Book app icon",
+    "chineseVocabularyBook.iconAlt": "English Vocabulary Book app icon",
 
     "meta.jlptbook.title": "JLPT Book | Study JLPT N5–N1 Vocabulary & Grammar",
     "meta.jlptbook.description": "Study JLPT N5–N1 vocabulary and grammar offline with spaced repetition, streaks, and achievements.",
@@ -306,7 +327,7 @@ const TRANSLATIONS = {
     "controls.theme.toggle": "ライト/ダークテーマを切り替え",
 
     "meta.home.title": "アプリ",
-    "meta.home.description": "アプリギャラリー",
+    "meta.home.description": "学習、創作、ゲーム、日々の作業に役立つアプリ集。",
     "meta.app.title": "酸性スライム | macOS向けXcodeストレージクリーナー",
     "meta.app.description": "Acidic Slime は macOS 上で Xcode ストレージをスキャンして整理します。",
     "meta.arithzo.title": "Arithzo | 小学生向け暗算トレーニング",
@@ -316,9 +337,25 @@ const TRANSLATIONS = {
     "meta.privacy.arithzo.title": "プライバシーポリシー | アリスゾ",
     "meta.privacy.arithzo.description": "アリスゾ のプライバシーポリシー。",
 
-    "home.kicker": "インディー開発アプリ",
-    "home.title": "実用性を重視した macOS アプリ。",
-    "home.body": "開発者がより速く作業できるよう、わかりやすく信頼できるツールを提供します。",
+    "home.title": "毎日を、ちょっと楽しく。",
+    "home.body": "iPhone、iPad、Mac のための学習ツール、ゲーム、実用アプリ。",
+    "home.card.vocabularybook.title": "英単語ブック",
+    "home.card.vocabularybook.subtitle": "大学入試・共通テスト向け英単語学習",
+    "home.card.chineseVocabularyBook.title": "英語単語帳：中国の試験語彙",
+    "home.card.chineseVocabularyBook.subtitle": "中国語圏向けのオフライン英単語学習",
+    "home.card.chineseVocabularyBook.aria": "中国語圏向け英語単語帳",
+    "home.card.jlptbook.title": "JLPT Book",
+    "home.card.jlptbook.subtitle": "N5からN1までの語彙・漢字・文法",
+    "home.card.offgridGallery.title": "Offgrid Gallery",
+    "home.card.offgridGallery.subtitle": "端末内で完結するプライベート写真ライブラリ",
+    "home.card.pokepani.title": "ポケパニ",
+    "home.card.pokepani.subtitle": "ポケモンカードゲーム向けプレイマット・対戦ツール",
+    "home.card.doubleslab.title": "ダブルスラボ",
+    "home.card.doubleslab.subtitle": "Pokémon Champions VGC向けダメージ計算・チーム分析",
+    "home.card.arithzo.title": "アリスゾ",
+    "home.card.arithzo.subtitle": "ゲーム感覚で取り組む暗算トレーニング",
+    "home.card.acidicSlime.title": "酸性スライム",
+    "home.card.acidicSlime.subtitle": "Mac向けXcodeストレージクリーナー",
     "home.cta.apps": "アプリギャラリーを見る",
     "home.cta.privacy": "プライバシーポリシー",
     "home.highlights": "特長",
@@ -327,7 +364,7 @@ const TRANSLATIONS = {
     "home.trust.3": "安全なクリーンアップ操作",
 
     "gallery.kicker": "アプリギャラリー",
-    "gallery.title": "アイコンをタップして詳細ページへ。",
+    "gallery.title": "アプリを見る",
     "gallery.body": "このホームページは拡張可能なアプリギャラリー構成になりました。新しいアプリはここに追加されます。",
     "gallery.aria": "アプリアイコンギャラリー",
     "gallery.acidicSlime": "macOS向け Xcode ストレージクリーナー",
@@ -413,6 +450,7 @@ const TRANSLATIONS = {
     "meta.privacy.vocabularybook.description": "英単語ブックのプライバシーポリシー。",
     "gallery.vocabularybook": "英単語ブック：中高生のための英単語学習",
     "vocabularybook.iconAlt": "英単語ブック のアプリアイコン",
+    "chineseVocabularyBook.iconAlt": "英語単語帳のアプリアイコン",
     "vocabularybook.title": "英単語ブック",
     "vocabularybook.subtitle": "大学入試・共通テストの語彙7000語暗記",
     "vocabularybook.overview.kicker": "概要",
@@ -438,6 +476,9 @@ const TRANSLATIONS = {
     "privacy.vocabularybook.title": "プライバシーポリシー",
     "privacy.vocabularybook.intro": "このページには 英単語ブック のプライバシーポリシーを掲載しています。",
     "privacy.vocabularybook.body": "英単語ブックは、ユーザーの個人情報を外部サーバーに収集・保存・送信しません。フラッシュカードの進捗、SRSスケジュール、テスト結果、XP、ストリーク、アチーブメントを含むすべての学習データは、端末内にのみ保存されます。ユーザープロフィールと設定は、デバイスでiCloudが有効な場合にのみiCloud経由で同期されます。このデータは開発者のサーバーを経由しません。サードパーティの分析、アカウント、リモートサービスは使用しません。",
+
+    "gallery.jlptbook": "JLPT Book：N5からN1までの語彙・漢字・文法",
+    "jlptbook.iconAlt": "JLPT Bookのアプリアイコン",
 
     "meta.pokepani.title": "ポケパニ | ポケカ用プレイマット・対戦ツール",
     "meta.pokepani.description": "ダメージカウンター、コイン、ダイス、特殊状態、ターン記録、タイマーを備えたカスタムプレイマット。",
@@ -601,7 +642,7 @@ const TRANSLATIONS = {
     "controls.theme.toggle": "切换浅色或深色主题",
 
     "meta.home.title": "应用",
-    "meta.home.description": "应用图库",
+    "meta.home.description": "涵盖学习、创作、游戏和日常实用工具的应用合集。",
     "meta.app.title": "酸性史莱姆 | macOS Xcode 存储清理工具",
     "meta.app.description": "酸性史莱姆可在 macOS 上扫描并清理 Xcode 存储。",
     "meta.arithzo.title": "速算达人 | 面向小学生的心算训练",
@@ -611,9 +652,25 @@ const TRANSLATIONS = {
     "meta.privacy.arithzo.title": "隐私政策 | 速算达人",
     "meta.privacy.arithzo.description": "速算达人隐私政策。",
 
-    "home.kicker": "独立开发者应用",
-    "home.title": "注重实用与质量的 macOS 应用。",
-    "home.body": "我们构建聚焦型工具，帮助开发者在保证可靠性的前提下提高效率。",
+    "home.title": "用心做好每一款实用应用。",
+    "home.body": "适用于 iPhone、iPad 和 Mac 的学习工具、游戏与实用应用。",
+    "home.card.vocabularybook.title": "日语考试英语单词本",
+    "home.card.vocabularybook.subtitle": "面向日本升学考试的英语词汇学习",
+    "home.card.chineseVocabularyBook.title": "英语单词本：中高考词汇",
+    "home.card.chineseVocabularyBook.subtitle": "面向中高考的离线英语词汇学习",
+    "home.card.chineseVocabularyBook.aria": "英语单词本：中高考词汇",
+    "home.card.jlptbook.title": "JLPT Book",
+    "home.card.jlptbook.subtitle": "覆盖N5至N1的词汇、汉字与语法",
+    "home.card.offgridGallery.title": "Offgrid Gallery",
+    "home.card.offgridGallery.subtitle": "完全保存在设备上的私密照片图库",
+    "home.card.pokepani.title": "卡牌宝贝",
+    "home.card.pokepani.subtitle": "宝可梦集换式卡牌游戏的对战垫与比赛工具",
+    "home.card.doubleslab.title": "DoublesLab",
+    "home.card.doubleslab.subtitle": "面向 Pokémon Champions VGC 的伤害计算与组队分析",
+    "home.card.arithzo.title": "速算达人",
+    "home.card.arithzo.subtitle": "游戏化的快速心算训练",
+    "home.card.acidicSlime.title": "酸性史莱姆",
+    "home.card.acidicSlime.subtitle": "专注的Mac版Xcode存储清理工具",
     "home.cta.apps": "浏览应用图库",
     "home.cta.privacy": "隐私政策",
     "home.highlights": "亮点",
@@ -622,7 +679,7 @@ const TRANSLATIONS = {
     "home.trust.3": "安全可控的清理流程",
 
     "gallery.kicker": "应用图库",
-    "gallery.title": "点击图标进入应用详情页。",
+    "gallery.title": "浏览应用",
     "gallery.body": "首页已升级为可扩展的应用图库，后续新应用会展示在这里。",
     "gallery.aria": "应用图标图库",
     "gallery.acidicSlime": "适用于 macOS 的 Xcode 存储清理工具",
@@ -701,6 +758,9 @@ const TRANSLATIONS = {
     "privacy.arithzo.title": "隐私政策",
     "privacy.arithzo.intro": "此页面包含速算达人的隐私政策。",
     "privacy.arithzo.body": "速算达人不收集、存储或传输任何个人数据。应用内学习记录和进度数据仅在您的设备本地处理与保存。打赏（应用内购买）由 Apple 安全处理；开发者无法访问您的支付信息或个人信息。",
+
+    "gallery.vocabularybook": "日语考试英语单词本：面向日本升学考试的英语词汇学习",
+    "vocabularybook.iconAlt": "日语考试英语单词本应用图标",
 
     "meta.chineseVocabularyBook.title": "英语单词本：中高考词汇 | 离线背单词",
     "meta.chineseVocabularyBook.description": "7000 个英语词汇，离线学习，科学 SRS 复习。适合考试备考与日常积累。",
@@ -1462,26 +1522,31 @@ const TRANSLATIONS = {
   const queryLocale = new URLSearchParams(window.location.search).get("lang");
   const storedLocale = safeGet(LOCALE_STORAGE_KEY);
   const browserLocale = navigator.language || navigator.userLanguage;
-  const pageSupportedLocales = (document.documentElement.dataset.supportedLocales || "")
+  const declaredPageLocales = (document.documentElement.dataset.supportedLocales || "")
     .split(",")
     .map((value) => normalizeLocale(value.trim()))
     .filter(Boolean);
-  const pageDefaultLocale = normalizeLocale(document.documentElement.dataset.defaultLocale) || DEFAULT_LOCALE;
+  const buttonPageLocales = Array.from(document.querySelectorAll(".lang-btn[data-locale]"))
+    .map((button) => normalizeLocale(button.dataset.locale))
+    .filter(Boolean);
+  const pageSupportedLocales = buttonPageLocales.length
+    ? buttonPageLocales
+    : declaredPageLocales;
   const pageAllowsLocale = (value) => !pageSupportedLocales.length || pageSupportedLocales.includes(value);
-  const localeCandidates = [
+  const preferredLocaleCandidates = [
     normalizeLocale(queryLocale),
     normalizeLocale(storedLocale),
     normalizeLocale(browserLocale),
-    pageDefaultLocale,
     DEFAULT_LOCALE
   ];
-  let locale = localeCandidates.find((value) => (
-    value && SUPPORTED_LOCALES.includes(value) && pageAllowsLocale(value)
-  ));
-
-  if (!locale) {
-    locale = pageSupportedLocales[0] || DEFAULT_LOCALE;
-  }
+  let preferredLocale = preferredLocaleCandidates.find((value) => (
+    value && SUPPORTED_LOCALES.includes(value)
+  )) || DEFAULT_LOCALE;
+  const declaredDefaultLocale = normalizeLocale(document.documentElement.dataset.defaultLocale);
+  const pageDefaultLocale = [declaredDefaultLocale, pageSupportedLocales[0], DEFAULT_LOCALE]
+    .find((value) => value && SUPPORTED_LOCALES.includes(value) && pageAllowsLocale(value))
+    || DEFAULT_LOCALE;
+  let locale = pageAllowsLocale(preferredLocale) ? preferredLocale : pageDefaultLocale;
 
   const applyLocalizedLinks = (currentLocale) => {
     const elements = document.querySelectorAll("[data-localized-link]");
@@ -1533,7 +1598,24 @@ const TRANSLATIONS = {
     document.querySelectorAll("[data-shot]").forEach((image) => {
       const shot = image.dataset.shot;
       const src = shots[shot];
-      if (src) image.setAttribute("src", src);
+      if (!src) return;
+
+      image.setAttribute("src", src);
+
+      const responsiveSource = image.closest("picture")?.querySelector("source[data-shot-source]");
+      const widths = (image.dataset.responsiveWidths || "")
+        .split(",")
+        .map((value) => Number.parseInt(value.trim(), 10))
+        .filter(Number.isFinite);
+
+      if (responsiveSource && widths.length) {
+        const dotIndex = src.lastIndexOf(".");
+        const base = dotIndex >= 0 ? src.slice(0, dotIndex) : src;
+        responsiveSource.setAttribute(
+          "srcset",
+          widths.map((width) => `${base}-${width}.webp ${width}w`).join(", ")
+        );
+      }
     });
   };
 
@@ -1584,7 +1666,7 @@ const TRANSLATIONS = {
 
   applyTranslations(locale);
   applyLocalizedScreenshots(locale);
-  applyLocalizedLinks(locale);
+  applyLocalizedLinks(preferredLocale);
   updateURLLocale(locale);
   syncLanguageButtons(locale);
   applyTheme(theme);
@@ -1594,11 +1676,12 @@ const TRANSLATIONS = {
       const selected = normalizeLocale(button.dataset.locale);
       if (!selected) return;
 
+      preferredLocale = selected;
       locale = selected;
-      safeSet(LOCALE_STORAGE_KEY, locale);
+      safeSet(LOCALE_STORAGE_KEY, preferredLocale);
       applyTranslations(locale);
       applyLocalizedScreenshots(locale);
-      applyLocalizedLinks(locale);
+      applyLocalizedLinks(preferredLocale);
       updateURLLocale(locale);
       syncLanguageButtons(locale);
       applyTheme(theme);

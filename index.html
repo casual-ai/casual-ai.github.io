@@ -7,6 +7,7 @@
   <meta name="description" data-i18n-attr="content:meta.home.description" content="App gallery">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <script src="assets/js/theme-init.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -24,34 +25,98 @@
   </header>
 
   <main class="home-main">
-    <section class="container" id="apps">
+    <section class="container home-intro" aria-labelledby="home-title">
+      <h1 id="home-title" data-i18n="home.title">Useful apps, made with care.</h1>
+      <p data-i18n="home.body">Learning tools, games, and focused utilities for iPhone, iPad, and Mac.</p>
+      <div class="home-character-stage" aria-hidden="true">
+        <span class="character-tile character-offgrid">
+          <img src="assets/images/offgrid-gallery-icon.png" alt="">
+        </span>
+        <span class="character-tile character-penguin-emperor">
+          <img src="assets/images/mascots/penguin-emperor.png" alt="">
+        </span>
+        <span class="character-tile character-penguin-little">
+          <img src="assets/images/mascots/penguin-little.png" alt="">
+        </span>
+        <span class="character-tile character-penguin-macaroni">
+          <img src="assets/images/mascots/penguin-macaroni.png" alt="">
+        </span>
+        <span class="character-tile character-cat-sakura">
+          <img src="assets/images/mascots/cat-sakura.png" alt="">
+        </span>
+        <span class="character-tile character-cat-yuki">
+          <img src="assets/images/mascots/cat-yuki.png" alt="">
+        </span>
+        <span class="character-tile character-cat-ramen">
+          <img src="assets/images/mascots/cat-ramen.png" alt="">
+        </span>
+        <span class="character-tile character-arithzo">
+          <img src="assets/images/arithzo-icon.png" alt="">
+        </span>
+        <span class="character-tile character-slime">
+          <img src="assets/images/acidicslime-icon.png" alt="">
+        </span>
+      </div>
+    </section>
+
+    <section class="container" id="apps" aria-labelledby="apps-title">
+      <h2 id="apps-title" class="visually-hidden" data-i18n="gallery.title">Browse apps</h2>
       <div class="app-gallery home-gallery" role="list" aria-label="Application icon gallery" data-i18n-attr="aria-label:gallery.aria">
         <a
-          class="home-app-link reveal"
-          href="vocabularybook.html"
-          data-localized-link
-          role="listitem"
-          data-i18n-attr="aria-label:gallery.vocabularybook,title:gallery.vocabularybook"
-        >
-          <img class="home-app-icon" src="assets/images/vocabularybook-icon.png" alt="英単語ブック app icon" data-i18n-attr="alt:vocabularybook.iconAlt">
-        </a>
-        <a
-          class="home-app-link reveal"
-          href="jlptbook.html"
-          data-localized-link
-          role="listitem"
-          data-i18n-attr="aria-label:gallery.jlptbook,title:gallery.jlptbook"
-        >
-          <img class="home-app-icon" src="assets/images/jlptbook-icon.png" alt="JLPT Book app icon" data-i18n-attr="alt:jlptbook.iconAlt">
-        </a>
-        <a
-          class="home-app-link reveal"
+          class="home-app-link is-primary reveal"
           href="offgrid-gallery.html"
           data-localized-link
           role="listitem"
           data-i18n-attr="aria-label:gallery.offgridGallery,title:gallery.offgridGallery"
         >
           <img class="home-app-icon" src="assets/images/offgrid-gallery-icon.png" alt="Offgrid Gallery app icon" data-i18n-attr="alt:offgridGallery.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.offgridGallery.title">Offgrid Gallery</strong>
+            <span data-i18n="home.card.offgridGallery.subtitle">A private, on-device photo library</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a
+          class="home-app-link is-priority reveal"
+          href="vocabularybook.html"
+          data-localized-link
+          role="listitem"
+          data-i18n-attr="aria-label:gallery.vocabularybook,title:gallery.vocabularybook"
+        >
+          <img class="home-app-icon" src="assets/images/vocabularybook-icon.png" alt="英単語ブック app icon" data-i18n-attr="alt:vocabularybook.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.vocabularybook.title">Vocabulary Book</strong>
+            <span data-i18n="home.card.vocabularybook.subtitle">English vocabulary for Japanese entrance exams</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a
+          class="home-app-link reveal"
+          href="chinese-vocabulary-book.html"
+          data-localized-link
+          role="listitem"
+          data-i18n-attr="aria-label:home.card.chineseVocabularyBook.aria,title:home.card.chineseVocabularyBook.aria"
+        >
+          <img class="home-app-icon borderless-app-icon" src="assets/images/chinese-vocabulary-book-icon.png" alt="English Vocabulary Book app icon" data-i18n-attr="alt:chineseVocabularyBook.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.chineseVocabularyBook.title">English Vocabulary Book</strong>
+            <span data-i18n="home.card.chineseVocabularyBook.subtitle">Offline vocabulary study for Chinese exams</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a
+          class="home-app-link is-priority reveal"
+          href="jlptbook.html"
+          data-localized-link
+          role="listitem"
+          data-i18n-attr="aria-label:gallery.jlptbook,title:gallery.jlptbook"
+        >
+          <img class="home-app-icon" src="assets/images/jlptbook-icon.png" alt="JLPT Book app icon" data-i18n-attr="alt:jlptbook.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.jlptbook.title">JLPT Book</strong>
+            <span data-i18n="home.card.jlptbook.subtitle">Vocabulary, kanji, and grammar from N5 to N1</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
           class="home-app-link reveal"
@@ -61,6 +126,11 @@
           data-i18n-attr="aria-label:gallery.pokepani,title:gallery.pokepani"
         >
           <img class="home-app-icon" src="assets/images/pokepani-icon.png" alt="Poképani app icon" data-i18n-attr="alt:pokepani.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.pokepani.title">Poképani</strong>
+            <span data-i18n="home.card.pokepani.subtitle">A customizable TCG playmat and match toolkit</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
           class="home-app-link reveal"
@@ -70,6 +140,11 @@
           data-i18n-attr="aria-label:gallery.doubleslab,title:gallery.doubleslab"
         >
           <img class="home-app-icon" src="assets/images/doubleslab-icon.png" alt="DoublesLab app icon" data-i18n-attr="alt:doubleslab.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.doubleslab.title">DoublesLab</strong>
+            <span data-i18n="home.card.doubleslab.subtitle">Damage ranges, KO odds, and matchup planning</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
           class="home-app-link reveal"
@@ -86,6 +161,11 @@
             data-theme-asset-light="assets/images/arithzo-icon.png"
             data-theme-asset-dark="assets/images/arithzo-icon-dark.png"
           >
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.arithzo.title">Arithzo</strong>
+            <span data-i18n="home.card.arithzo.subtitle">Fast, game-like mental math practice</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
           class="home-app-link reveal"
@@ -95,6 +175,11 @@
           data-i18n-attr="aria-label:gallery.acidicSlime,title:gallery.acidicSlime"
         >
           <img class="home-app-icon" src="assets/images/acidicslime-icon.png" alt="Acidic Slime app icon" data-i18n-attr="alt:app.iconAlt">
+          <span class="home-app-copy">
+            <strong data-i18n="home.card.acidicSlime.title">Acidic Slime</strong>
+            <span data-i18n="home.card.acidicSlime.subtitle">A focused Xcode storage cleaner for Mac</span>
+          </span>
+          <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>

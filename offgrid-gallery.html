@@ -7,6 +7,7 @@
   <meta name="description" data-i18n-attr="content:meta.offgridGallery.description" content="A private iPhone and iPad photo library with local storage, albums, duplicate cleanup, and optional App Lock.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <script src="assets/js/theme-init.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -77,16 +78,28 @@
 
       <div class="shot-gallery">
         <figure class="shot-frame">
-          <img src="assets/images/appstore/offgrid-gallery/en-01_grid.png" data-shot="shot1" alt="Offgrid Gallery photo grid" loading="lazy" data-i18n-attr="alt:offgridGallery.screens.1.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-01_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-01_grid-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-01_grid.png" data-shot="shot1" data-responsive-widths="640,1280" alt="Offgrid Gallery photo grid" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.1.alt">
+          </picture>
         </figure>
         <figure class="shot-frame">
-          <img src="assets/images/appstore/offgrid-gallery/en-02_photoview.png" data-shot="shot2" alt="Offgrid Gallery photo viewer" loading="lazy" data-i18n-attr="alt:offgridGallery.screens.2.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-02_photoview-640.webp 640w, assets/images/appstore/offgrid-gallery/en-02_photoview-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-02_photoview.png" data-shot="shot2" data-responsive-widths="640,1280" alt="Offgrid Gallery photo viewer" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.2.alt">
+          </picture>
         </figure>
         <figure class="shot-frame">
-          <img src="assets/images/appstore/offgrid-gallery/en-03_settings.png" data-shot="shot3" alt="Offgrid Gallery settings screen" loading="lazy" data-i18n-attr="alt:offgridGallery.screens.3.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-03_settings-640.webp 640w, assets/images/appstore/offgrid-gallery/en-03_settings-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-03_settings.png" data-shot="shot3" data-responsive-widths="640,1280" alt="Offgrid Gallery settings screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.3.alt">
+          </picture>
         </figure>
         <figure class="shot-frame">
-          <img src="assets/images/appstore/offgrid-gallery/en-04_grid.png" data-shot="shot4" alt="Offgrid Gallery album grid" loading="lazy" data-i18n-attr="alt:offgridGallery.screens.4.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-04_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-04_grid-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-04_grid.png" data-shot="shot4" data-responsive-widths="640,1280" alt="Offgrid Gallery album grid" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.4.alt">
+          </picture>
         </figure>
       </div>
     </section>

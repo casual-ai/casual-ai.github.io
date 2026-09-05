@@ -7,6 +7,7 @@
   <meta name="description" data-i18n-attr="content:meta.pokepani.description" content="A customizable digital playmat with damage counters, coin, dice, turn tracking, conditions, and a match timer.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <script src="assets/js/theme-init.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -80,13 +81,22 @@
 
       <div class="shot-gallery">
         <figure class="shot-frame">
-          <img src="assets/images/appstore/pokepani/en-01_solo.png" data-shot="shot1" alt="Poképani solo playmat" loading="lazy" data-i18n-attr="alt:pokepani.screens.1.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/pokepani/en-01_solo-640.webp 640w, assets/images/appstore/pokepani/en-01_solo-1280.webp 1280w">
+            <img src="assets/images/appstore/pokepani/en-01_solo.png" data-shot="shot1" data-responsive-widths="640,1280" alt="Poképani solo playmat" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:pokepani.screens.1.alt">
+          </picture>
         </figure>
         <figure class="shot-frame">
-          <img src="assets/images/appstore/pokepani/en-02_two_player.png" data-shot="shot2" alt="Poképani two-player playmat" loading="lazy" data-i18n-attr="alt:pokepani.screens.2.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/pokepani/en-02_two_player-640.webp 640w, assets/images/appstore/pokepani/en-02_two_player-1280.webp 1280w">
+            <img src="assets/images/appstore/pokepani/en-02_two_player.png" data-shot="shot2" data-responsive-widths="640,1280" alt="Poképani two-player playmat" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:pokepani.screens.2.alt">
+          </picture>
         </figure>
         <figure class="shot-frame">
-          <img src="assets/images/appstore/pokepani/en-03_coin_result.png" data-shot="shot3" alt="Poképani coin flip result" loading="lazy" data-i18n-attr="alt:pokepani.screens.3.alt">
+          <picture>
+            <source data-shot-source type="image/webp" srcset="assets/images/appstore/pokepani/en-03_coin_result-640.webp 640w, assets/images/appstore/pokepani/en-03_coin_result-1280.webp 1280w">
+            <img src="assets/images/appstore/pokepani/en-03_coin_result.png" data-shot="shot3" data-responsive-widths="640,1280" alt="Poképani coin flip result" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:pokepani.screens.3.alt">
+          </picture>
         </figure>
       </div>
     </section>
