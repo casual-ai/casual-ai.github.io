@@ -59,7 +59,7 @@ def parse_dsl_metadata(path):
     def flush_block():
         nonlocal current_key, block_lines
         if current_locale is not None and current_key is not None and block_lines is not None:
-            locales[current_locale][current_key] = "\n".join(block_lines)
+            locales[current_locale][current_key] = "\n".join(block_lines).rstrip("\n")
         current_key = None
         block_lines = None
 
@@ -69,6 +69,10 @@ def parse_dsl_metadata(path):
             if block_lines is not None:
                 if line.startswith("  "):
                     block_lines.append(line[2:])
+                    continue
+                # A blank line is a paragraph break inside the block, not its end.
+                if not line.strip():
+                    block_lines.append("")
                     continue
                 flush_block()
             if not line.strip() or line.startswith("#") or line.startswith("%asc"):

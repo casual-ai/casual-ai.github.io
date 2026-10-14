@@ -1,40 +1,56 @@
 # Maps each app's website page to the sibling repo that holds its real App
 # Store Connect metadata (managed there via the `asc` CLI). Used by sync.py
-# to pull the currently-live version's copy and screenshots for review before
-# hand-editing the site.
+# to pull the currently-live version's copy for review before hand-editing
+# the site, and by assets.py to copy the app's icon and screenshots in.
+#
+# `config` is the app's asc-config.yaml, relative to `repo`; its folder is
+# the app's ASC folder (metadata.asc, screenshots/).
 #
 # `locales` maps ASC locale code -> site locale code. Only locales the site
 # actually renders for that page are listed; anything else ASC has for the
-# app (e.g. Acidic Slime's ar-SA/fr-FR/it-IT/ko-KR/zh-TW) is intentionally
-# left out here and skipped by the sync, not an error.
+# app (e.g. Acidic Slime's ar-SA/fr-FR/it/ko) is intentionally
+# left out here and skipped, not an error.
 #
-# Chess Kingdoms, Offgrid Web Saver, and the VocabularyBook repo's second
-# "chinese-vocabulary-book" ASC app are deliberately absent — see the plan
-# at ~/.claude/plans/sunny-discovering-sketch.md for why.
+# `icon` / `icon_dark` are the app's 1024px icon, relative to `repo`. They
+# are spelled out because icons live in the asset catalog, not the ASC
+# folder, and several repos carry many alternate icon sets. `site_icon` /
+# `site_icon_dark` are where they land in this repo.
+#
+# Screenshots land in assets/images/appstore/<app-key>/.
+#
+# `icon_only` (optional, same shape minus config/platform/locales) is for an
+# app with no ASC folder: assets.py refreshes its icon and sync.py ignores it.
 
 apps:
   acidic-slime:
     page: acidic-slime.html
     prefix: app
     repo: ~/Projects/AcidicSlime
-    config: AppStoreConnect/asc-config.yaml
+    config: AppStoreConnect/app-6761619751/asc-config.yaml
     platform: MAC_OS
     locales:
       en-US: en
-      ja-JP: ja
-      zh-CN: zh-Hans
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+    icon: Assets/Assets.xcassets/AppIcon.appiconset/icon_512x512@2x.png
+    site_icon: assets/images/acidicslime-icon.png
 
   arithzo:
     page: arithzo.html
     prefix: arithzo
     repo: ~/Projects/MathGame
-    config: AppStoreConnect/asc-config.yaml
+    config: AppStoreConnect/app-6762428777/asc-config.yaml
     platform: IOS
     locales:
       en-US: en
       ja: ja
       zh-Hans: zh-Hans
       zh-Hant: zh-Hant
+    icon: App/Sources/ArithzoApp/Assets.xcassets/AppIcon.appiconset/AppIcon-1024-light.png
+    icon_dark: App/Sources/ArithzoApp/Assets.xcassets/AppIcon.appiconset/AppIcon-1024-dark.png
+    site_icon: assets/images/arithzo-icon.png
+    site_icon_dark: assets/images/arithzo-icon-dark.png
 
   vocabularybook:
     page: vocabularybook.html
@@ -44,17 +60,21 @@ apps:
     platform: IOS
     locales:
       ja: ja
+    icon: VocabularyBook/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    site_icon: assets/images/vocabularybook-icon.png
 
   jlptbook:
     page: jlptbook.html
     prefix: jlptbook
     repo: ~/Projects/JapaneseVocabularyBook
-    config: AppStoreConnect/asc-config.yaml
+    config: AppStoreConnect/jlptbook/asc-config.yaml
     platform: IOS
     locales:
       en-US: en
       zh-Hans: zh-Hans
       zh-Hant: zh-Hant
+    icon: JLPTBook/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    site_icon: assets/images/jlptbook-icon.png
 
   pokepani:
     page: pokepani.html
@@ -68,18 +88,22 @@ apps:
       ko: ko
       zh-Hans: zh-Hans
       zh-Hant: zh-Hant
+    icon: Sources/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    site_icon: assets/images/pokepani-icon.png
 
   doubleslab:
     page: doubleslab.html
     prefix: doubleslab
     repo: ~/Projects/DamageCalc
-    config: AppStoreConnect/asc-config.yaml
+    config: AppStoreConnect/doubleslab/asc-config.yaml
     platform: IOS
     locales:
       en-US: en
       ja: ja
       zh-Hans: zh-Hans
       zh-Hant: zh-Hant
+    icon: Sources/DamageCalc/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png
+    site_icon: assets/images/doubleslab-icon.png
 
   offgrid-gallery:
     page: offgrid-gallery.html
@@ -92,3 +116,33 @@ apps:
       ja: ja
       zh-Hans: zh-Hans
       zh-Hant: zh-Hant
+    icon: SharedResources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png
+    site_icon: assets/images/offgrid-gallery-icon.png
+
+  chinese-vocabulary-book:
+    page: chinese-vocabulary-book.html
+    prefix: chineseVocabularyBook
+    repo: ~/Projects/VocabularyBook
+    config: AppStoreConnect/chinese-vocabulary-book/asc-config.yaml
+    platform: IOS
+    locales:
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+    icon: ChineseVocabularyBook/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    site_icon: assets/images/chinese-vocabulary-book-icon.png
+
+  tub-time:
+    page: tub-time.html
+    prefix: tubtime
+    repo: ~/Projects/Game002
+    config: AppStoreConnect/game002/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+    icon: Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    icon_dark: Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-dark.png
+    site_icon: assets/images/tubtime-icon.png
+    site_icon_dark: assets/images/tubtime-icon-dark.png
