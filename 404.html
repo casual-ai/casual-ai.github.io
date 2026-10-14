@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-page="not-found">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Yanuvo</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <!-- GitHub Pages serves this file for every address that does not exist, at
+       any depth, so everything it loads is addressed from the site root. -->
+  <script>
+    (() => {
+      // Every app page, by file name without ".html". Add a new app here.
+      const APP_PAGES = [
+        "acidic-slime",
+        "arithzo",
+        "chinese-vocabulary-book",
+        "doubleslab",
+        "jlptbook",
+        "offgrid-gallery",
+        "pokepani",
+        "tub-time",
+        "vocabularybook"
+      ];
+
+      // Letters and digits only, so /Tub_Time/ and /tubtime still find
+      // tub-time. Longest name first: "chinese-vocabulary-book" would
+      // otherwise be claimed by "vocabularybook".
+      const squash = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, "");
+      let path = window.location.pathname;
+      try {
+        path = decodeURIComponent(path);
+      } catch {
+        // A malformed escape is still searched as it is.
+      }
+      const wanted = squash(path);
+      const app = APP_PAGES
+        .slice()
+        .sort((a, b) => b.length - a.length)
+        .find((name) => wanted.includes(squash(name)));
+
+      const lang = new URLSearchParams(window.location.search).get("lang");
+      const target = (app ? `/${app}.html` : "/") + (lang ? `?lang=${encodeURIComponent(lang)}` : "");
+      window.location.replace(target);
+    })();
+  </script>
+  <!-- Without JavaScript the home page is the best guess there is. -->
+  <noscript><meta http-equiv="refresh" content="0; url=/"></noscript>
+  <script src="/assets/js/theme-init.js"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <main class="privacy-main" id="main">
+    <p class="kicker">404</p>
+    <h1 class="privacy-title">Page not found</h1>
+    <p class="lead">Taking you to the home page. If nothing happens, <a href="/">go to yanuvo.app</a>.</p>
+  </main>
+</body>
+</html>
