@@ -11,59 +11,52 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
-    <div class="container header-inner home-header-inner">
+    <div class="container header-inner">
+      <a class="nav-brand" href="#top">
+        <img src="assets/images/favicon.svg" alt="" width="26" height="26">
+        <span>Yanuvo</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#apps" data-i18n="nav.apps">Apps</a>
+      </nav>
       <div class="control-row">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
           <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
           <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">JP</button>
           <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
+          <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+        <button id="theme-toggle" class="icon-btn" type="button" data-i18n-attr="aria-label:controls.theme.toggle,title:controls.theme.toggle">
+          <svg class="i-sun" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="3.25"/><path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M3 3l1.6 1.6M11.4 11.4 13 13M13 3l-1.6 1.6M4.6 11.4 3 13"/></svg>
+          <svg class="i-moon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="home-main">
-    <section class="container home-intro" aria-labelledby="home-title">
-      <h1 id="home-title" data-i18n="home.title">Useful apps, made with care.</h1>
-      <p data-i18n="home.body">Learning tools, games, and focused utilities for iPhone, iPad, and Mac.</p>
-      <div class="home-character-stage" aria-hidden="true">
-        <span class="character-tile character-offgrid">
-          <img src="assets/images/offgrid-gallery-icon.png" alt="">
-        </span>
-        <span class="character-tile character-penguin-emperor">
-          <img src="assets/images/mascots/penguin-emperor.png" alt="">
-        </span>
-        <span class="character-tile character-penguin-little">
-          <img src="assets/images/mascots/penguin-little.png" alt="">
-        </span>
-        <span class="character-tile character-penguin-macaroni">
-          <img src="assets/images/mascots/penguin-macaroni.png" alt="">
-        </span>
-        <span class="character-tile character-cat-sakura">
-          <img src="assets/images/mascots/cat-sakura.png" alt="">
-        </span>
-        <span class="character-tile character-cat-yuki">
-          <img src="assets/images/mascots/cat-yuki.png" alt="">
-        </span>
-        <span class="character-tile character-cat-ramen">
-          <img src="assets/images/mascots/cat-ramen.png" alt="">
-        </span>
-        <span class="character-tile character-arithzo">
-          <img src="assets/images/arithzo-icon.png" alt="">
-        </span>
-        <span class="character-tile character-slime">
-          <img src="assets/images/acidicslime-icon.png" alt="">
-        </span>
+  <main id="main">
+    <section class="hero home-hero" id="top" aria-labelledby="home-title">
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="home.eyebrow">Apps for iPhone, iPad and Mac</p>
+        <h1 id="home-title" data-i18n="home.title">Useful apps, made with care.</h1>
+        <p class="lede" data-i18n="home.body">Learning tools, games, and focused utilities for iPhone, iPad, and Mac.</p>
+        <div class="cta-row">
+          <a class="cta-button" href="#apps" data-i18n="gallery.title">Browse apps</a>
+        </div>
       </div>
+      <picture class="home-hero-art">
+        <source type="image/webp" sizes="(max-width: 860px) 90vw, 520px" srcset="assets/images/home-mascots-720.webp 720w, assets/images/home-mascots-1280.webp 1280w">
+        <img src="assets/images/home-mascots.png" alt="The apps' mascots together: a kitten in a red scarf holding a pencil, a penguin in a graduation cap reading a book, a cheering number eight, a green slime and a rubber duck." width="1443" height="951" decoding="async" fetchpriority="high" data-i18n-attr="alt:home.hero.alt">
+      </picture>
     </section>
 
-    <section class="container" id="apps" aria-labelledby="apps-title">
-      <h2 id="apps-title" class="visually-hidden" data-i18n="gallery.title">Browse apps</h2>
-      <div class="app-gallery home-gallery" role="list" aria-label="Application icon gallery" data-i18n-attr="aria-label:gallery.aria">
+    <section class="band band-alt" id="apps" aria-labelledby="apps-title">
+      <h2 id="apps-title" class="section-title" data-i18n="nav.apps">Apps</h2>
+      <div class="home-gallery" role="list" aria-label="Application icon gallery" data-i18n-attr="aria-label:gallery.aria">
         <a
-          class="home-app-link is-primary reveal"
+          class="home-app-link reveal"
           href="offgrid-gallery.html"
           data-localized-link
           role="listitem"
@@ -72,12 +65,12 @@
           <img class="home-app-icon" src="assets/images/offgrid-gallery-icon.png" alt="Offgrid Gallery app icon" data-i18n-attr="alt:offgridGallery.iconAlt">
           <span class="home-app-copy">
             <strong data-i18n="home.card.offgridGallery.title">Offgrid Gallery</strong>
-            <span data-i18n="home.card.offgridGallery.subtitle">A private, on-device photo library</span>
+            <span data-i18n="home.card.offgridGallery.subtitle">A photo vault for the things you love</span>
           </span>
           <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
-          class="home-app-link is-priority reveal"
+          class="home-app-link reveal"
           href="vocabularybook.html"
           data-localized-link
           role="listitem"
@@ -105,7 +98,7 @@
           <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
         <a
-          class="home-app-link is-priority reveal"
+          class="home-app-link reveal"
           href="jlptbook.html"
           data-localized-link
           role="listitem"
@@ -128,7 +121,7 @@
           <img class="home-app-icon" src="assets/images/pokepani-icon.png" alt="Poképani app icon" data-i18n-attr="alt:pokepani.iconAlt">
           <span class="home-app-copy">
             <strong data-i18n="home.card.pokepani.title">Poképani</strong>
-            <span data-i18n="home.card.pokepani.subtitle">A customizable TCG playmat and match toolkit</span>
+            <span data-i18n="home.card.pokepani.subtitle">Playmat and match tools for Pokémon TCG</span>
           </span>
           <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
@@ -142,7 +135,7 @@
           <img class="home-app-icon" src="assets/images/doubleslab-icon.png" alt="DoublesLab app icon" data-i18n-attr="alt:doubleslab.iconAlt">
           <span class="home-app-copy">
             <strong data-i18n="home.card.doubleslab.title">DoublesLab</strong>
-            <span data-i18n="home.card.doubleslab.subtitle">Damage ranges, KO odds, and matchup planning</span>
+            <span data-i18n="home.card.doubleslab.subtitle">Damage calculations and team planning for Pokémon Champions VGC</span>
           </span>
           <span class="home-app-arrow" aria-hidden="true">↗</span>
         </a>
@@ -198,6 +191,13 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="home.footer.tagline">Made by a solo developer.</p>
+      <p>yanuvo.app</p>
+    </div>
+  </footer>
 
   <script src="assets/js/site.js"></script>
 </body>

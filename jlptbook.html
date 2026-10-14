@@ -11,21 +11,33 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
-    <div class="container header-inner app-header-inner">
-      <a class="back-btn" href="index.html" data-localized-link data-i18n-attr="aria-label:controls.back,title:controls.back">←</a>
+    <div class="container header-inner">
+      <a class="nav-back" href="index.html" data-localized-link>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>
+        <span data-i18n="nav.allApps">All apps</span>
+      </a>
+      <a class="nav-brand" href="#top">
+        <img src="assets/images/jlptbook-icon.png" alt="" width="26" height="26">
+        <span data-i18n="jlptbook.title">JLPT Book</span>
+      </a>
       <div class="control-row">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
           <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
+          <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">JP</button>
           <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
           <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+        <button id="theme-toggle" class="icon-btn" type="button" data-i18n-attr="aria-label:controls.theme.toggle,title:controls.theme.toggle">
+          <svg class="i-sun" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="3.25"/><path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M3 3l1.6 1.6M11.4 11.4 13 13M13 3l-1.6 1.6M4.6 11.4 3 13"/></svg>
+          <svg class="i-moon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero-inner">
         <img class="hero-logo" src="assets/images/jlptbook-icon.png" alt="JLPT Book app icon" data-i18n-attr="alt:jlptbook.iconAlt">
@@ -47,63 +59,63 @@
             data-i18n-attr="alt:jlptbook.store.badgeAlt"
           >
         </a>
-        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
       </div>
     </section>
 
-    <section class="container section" id="overview">
+    <section class="band" id="overview">
       <p class="kicker" data-i18n="jlptbook.overview.kicker">Overview</p>
-      <h2 class="section-title" data-i18n="jlptbook.overview.title">Master JLPT vocabulary and grammar from N5 to N1.</h2>
+      <h2 class="section-title" data-i18n="jlptbook.overview.title">A clear path through Japanese, from JLPT N5 to N1.</h2>
 
       <div class="feature-grid">
         <article class="feature-card">
-          <h3 data-i18n="jlptbook.feature.1.title">N5–N1 coverage</h3>
-          <p data-i18n="jlptbook.feature.1.body">Study the vocabulary and grammar patterns tested at every JLPT level — from beginner N5 to advanced N1.</p>
+          <h3 data-i18n="jlptbook.feature.1.title">A complete JLPT study path</h3>
+          <p data-i18n="jlptbook.feature.1.body">7,500+ vocabulary words and 890+ grammar patterns from N5 to N1, with kana, kanji readings, romaji, explanations, examples, and audio.</p>
         </article>
         <article class="feature-card">
-          <h3 data-i18n="jlptbook.feature.2.title">Spaced repetition (SM-2)</h3>
-          <p data-i18n="jlptbook.feature.2.body">The SM-2 algorithm schedules each card at the optimal moment, moving vocabulary into long-term memory efficiently.</p>
+          <h3 data-i18n="jlptbook.feature.2.title">Remember with spaced repetition</h3>
+          <p data-i18n="jlptbook.feature.2.body">Smart SRS review schedules each item when it needs attention. Rate cards Again, Hard, or Good, see what is due today, and keep built-in lessons and your own cards in one routine.</p>
         </article>
         <article class="feature-card">
-          <h3 data-i18n="jlptbook.feature.3.title">Fill-in mode for active recall</h3>
-          <p data-i18n="jlptbook.feature.3.body">Build each word's reading from tiles in tests and reviews, plus daily streaks and 30+ achievements to keep you coming back.</p>
+          <h3 data-i18n="jlptbook.feature.3.title">Tests, reading, and your own cards</h3>
+          <p data-i18n="jlptbook.feature.3.body">Quizzes at every level, 100 built-in reading passages, and My Cards: photograph Japanese on a menu, sign, or page and save unfamiliar words as flashcards. Everyday study works offline with no account.</p>
         </article>
       </div>
     </section>
 
-    <section class="container section" id="screenshots">
+    <section class="band band-alt" id="screenshots">
       <p class="kicker" data-i18n="jlptbook.screens.kicker">Screenshots</p>
       <h2 class="section-title" data-i18n="jlptbook.screens.title">Study, review, and test — all in one place.</h2>
+
 
       <div class="shot-gallery">
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/jlptbook/en-01_home-640.webp 640w, assets/images/appstore/jlptbook/en-01_home-1280.webp 1280w">
-            <img src="assets/images/appstore/jlptbook/en-01_home.png" data-shot="shot1" data-responsive-widths="640,1280" alt="JLPT Book home screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.1.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/jlptbook/en-01_study-640.webp 640w, assets/images/appstore/jlptbook/en-01_study-1280.webp 1280w">
+            <img src="assets/images/appstore/jlptbook/en-01_study.png" data-shot="shot1" data-responsive-widths="640,1280" alt="JLPT Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/jlptbook/en-02_study-640.webp 640w, assets/images/appstore/jlptbook/en-02_study-1280.webp 1280w">
-            <img src="assets/images/appstore/jlptbook/en-02_study.png" data-shot="shot2" data-responsive-widths="640,1280" alt="JLPT Book flashcard study screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.2.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/jlptbook/en-02_flashcard-640.webp 640w, assets/images/appstore/jlptbook/en-02_flashcard-1280.webp 1280w">
+            <img src="assets/images/appstore/jlptbook/en-02_flashcard.png" data-shot="shot2" data-responsive-widths="640,1280" alt="JLPT Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/jlptbook/en-03_review-640.webp 640w, assets/images/appstore/jlptbook/en-03_review-1280.webp 1280w">
-            <img src="assets/images/appstore/jlptbook/en-03_review.png" data-shot="shot3" data-responsive-widths="640,1280" alt="JLPT Book review screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.3.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/jlptbook/en-03_review-640.webp 640w, assets/images/appstore/jlptbook/en-03_review-1280.webp 1280w">
+            <img src="assets/images/appstore/jlptbook/en-03_review.png" data-shot="shot3" data-responsive-widths="640,1280" alt="JLPT Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/jlptbook/en-04_tests-640.webp 640w, assets/images/appstore/jlptbook/en-04_tests-1280.webp 1280w">
-            <img src="assets/images/appstore/jlptbook/en-04_tests.png" data-shot="shot4" data-responsive-widths="640,1280" alt="JLPT Book test screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.4.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/jlptbook/en-04_tests-640.webp 640w, assets/images/appstore/jlptbook/en-04_tests-1280.webp 1280w">
+            <img src="assets/images/appstore/jlptbook/en-04_tests.png" data-shot="shot4" data-responsive-widths="640,1280" alt="JLPT Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/jlptbook/en-05_settings-640.webp 640w, assets/images/appstore/jlptbook/en-05_settings-1280.webp 1280w">
-            <img src="assets/images/appstore/jlptbook/en-05_settings.png" data-shot="shot5" data-responsive-widths="640,1280" alt="JLPT Book settings screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.5.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/jlptbook/en-05_reading-640.webp 640w, assets/images/appstore/jlptbook/en-05_reading-1280.webp 1280w">
+            <img src="assets/images/appstore/jlptbook/en-05_reading.png" data-shot="shot5" data-responsive-widths="640,1280" alt="JLPT Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:jlptbook.screens.alt">
           </picture>
         </figure>
       </div>
@@ -114,7 +126,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p data-i18n="jlptbook.footer.tagline">Your offline JLPT study companion.</p>
-      <a href="privacy/jlptbook/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      <div class="footer-links">
+        <a href="index.html" data-localized-link data-i18n="nav.allApps">All apps</a>
+        <a href="privacy/jlptbook/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      </div>
     </div>
   </footer>
 

@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Offgrid Gallery | Private Local Photo Library</title>
-  <meta name="description" data-i18n-attr="content:meta.offgridGallery.description" content="A private iPhone and iPad photo library with local storage, albums, duplicate cleanup, and optional App Lock.">
+  <title>Offgrid Gallery | Photo Vault for the Things You Love</title>
+  <meta name="description" data-i18n-attr="content:meta.offgridGallery.description" content="A photo and video vault for iPhone, iPad and Mac: one vault for each thing you love, unlimited albums, Home and Lock Screen widgets, and optional Face ID lock. On device, no account.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
   <script src="assets/js/theme-init.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
-    <div class="container header-inner app-header-inner">
-      <a class="back-btn" href="index.html" data-localized-link data-i18n-attr="aria-label:controls.back,title:controls.back">←</a>
+    <div class="container header-inner">
+      <a class="nav-back" href="index.html" data-localized-link>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>
+        <span data-i18n="nav.allApps">All apps</span>
+      </a>
+      <a class="nav-brand" href="#top">
+        <img src="assets/images/offgrid-gallery-icon.png" alt="" width="26" height="26">
+        <span data-i18n="offgridGallery.title">Offgrid Gallery</span>
+      </a>
       <div class="control-row">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
           <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
@@ -21,17 +29,20 @@
           <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
           <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+        <button id="theme-toggle" class="icon-btn" type="button" data-i18n-attr="aria-label:controls.theme.toggle,title:controls.theme.toggle">
+          <svg class="i-sun" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="3.25"/><path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M3 3l1.6 1.6M11.4 11.4 13 13M13 3l-1.6 1.6M4.6 11.4 3 13"/></svg>
+          <svg class="i-moon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero-inner">
         <img class="hero-logo" src="assets/images/offgrid-gallery-icon.png" alt="Offgrid Gallery app icon" data-i18n-attr="alt:offgridGallery.iconAlt">
         <h1 data-i18n="offgridGallery.title">Offgrid Gallery</h1>
-        <p class="hero-subtitle" data-i18n="offgridGallery.subtitle">Private, on-device photo album</p>
+        <p class="hero-subtitle" data-i18n="offgridGallery.subtitle">Fandom vaults &amp; private albums</p>
         <a
           class="app-store-link"
           href="https://apps.apple.com/us/app/offgrid-gallery-photo-vault/id6785182413"
@@ -48,57 +59,81 @@
             data-i18n-attr="alt:offgridGallery.store.badgeAlt"
           >
         </a>
-        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
       </div>
     </section>
 
-    <section class="container section" id="overview">
+    <section class="band" id="overview">
       <p class="kicker" data-i18n="offgridGallery.overview.kicker">Overview</p>
-      <h2 class="section-title" data-i18n="offgridGallery.overview.title">Keep a separate photo library that stays under your control.</h2>
+      <h2 class="section-title" data-i18n="offgridGallery.overview.title">A photo and video vault for the things you love.</h2>
 
       <div class="feature-grid">
         <article class="feature-card">
-          <h3 data-i18n="offgridGallery.feature.1.title">Local-first library</h3>
-          <p data-i18n="offgridGallery.feature.1.body">Import or capture photos and videos straight into a private library, with full-resolution originals stored on your device.</p>
+          <h3 data-i18n="offgridGallery.feature.1.title">One vault for each thing you love</h3>
+          <p data-i18n="offgridGallery.feature.1.body">Make a vault for each idol, artist, anime, manga or game character, or hobby, with as many albums as you want in each. Save from any app with the share sheet and choose the vault it goes to.</p>
         </article>
         <article class="feature-card">
-          <h3 data-i18n="offgridGallery.feature.2.title">Organize and clean up</h3>
-          <p data-i18n="offgridGallery.feature.2.body">Use search, filters, custom albums, favorites, date and location grouping, duplicate detection, and Recently Deleted.</p>
+          <h3 data-i18n="offgridGallery.feature.2.title">Your favorites on your Home Screen</h3>
+          <p data-i18n="offgridGallery.feature.2.body">Put a photo, an album or a photo grid on your Home Screen, and a photo on your Lock Screen. Add picture frames and a wall behind them. A widget shows only what you choose for it.</p>
         </article>
         <article class="feature-card">
-          <h3 data-i18n="offgridGallery.feature.3.title">Private access</h3>
-          <p data-i18n="offgridGallery.feature.3.body">Optional Face ID or Touch ID App Lock keeps your library private, with multiple vaults so you can keep separate libraries side by side.</p>
+          <h3 data-i18n="offgridGallery.feature.3.title">Private when you want it</h3>
+          <p data-i18n="offgridGallery.feature.3.body">Optional App Lock with Face ID or Touch ID. Everything stays on your device: no sign-in, no servers, no tracking, no ads. iCloud Drive is optional, off by default, and set per vault.</p>
         </article>
       </div>
     </section>
 
-    <section class="container section" id="screenshots">
+    <section class="band band-alt" id="screenshots">
       <p class="kicker" data-i18n="offgridGallery.screens.kicker">Screenshots</p>
-      <h2 class="section-title" data-i18n="offgridGallery.screens.title">Your photos and videos, kept private.</h2>
+      <h2 class="section-title" data-i18n="offgridGallery.screens.title">Vaults, albums, widgets and a private lock.</h2>
+
 
       <div class="shot-gallery">
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-01_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-01_grid-1280.webp 1280w">
-            <img src="assets/images/appstore/offgrid-gallery/en-01_grid.png" data-shot="shot1" data-responsive-widths="640,1280" alt="Offgrid Gallery photo grid" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.1.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-01_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-01_grid-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-01_grid.png" data-shot="shot1" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-02_photoview-640.webp 640w, assets/images/appstore/offgrid-gallery/en-02_photoview-1280.webp 1280w">
-            <img src="assets/images/appstore/offgrid-gallery/en-02_photoview.png" data-shot="shot2" data-responsive-widths="640,1280" alt="Offgrid Gallery photo viewer" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.2.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-02_albums-640.webp 640w, assets/images/appstore/offgrid-gallery/en-02_albums-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-02_albums.png" data-shot="shot2" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-03_settings-640.webp 640w, assets/images/appstore/offgrid-gallery/en-03_settings-1280.webp 1280w">
-            <img src="assets/images/appstore/offgrid-gallery/en-03_settings.png" data-shot="shot3" data-responsive-widths="640,1280" alt="Offgrid Gallery settings screen" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.3.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-03_widgets-640.webp 640w, assets/images/appstore/offgrid-gallery/en-03_widgets-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-03_widgets.png" data-shot="shot3" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
           </picture>
         </figure>
         <figure class="shot-frame">
           <picture>
-            <source data-shot-source type="image/webp" srcset="assets/images/appstore/offgrid-gallery/en-04_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-04_grid-1280.webp 1280w">
-            <img src="assets/images/appstore/offgrid-gallery/en-04_grid.png" data-shot="shot4" data-responsive-widths="640,1280" alt="Offgrid Gallery album grid" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.4.alt">
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-04_settings-640.webp 640w, assets/images/appstore/offgrid-gallery/en-04_settings-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-04_settings.png" data-shot="shot4" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-05_editor-640.webp 640w, assets/images/appstore/offgrid-gallery/en-05_editor-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-05_editor.png" data-shot="shot5" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-06_collage-640.webp 640w, assets/images/appstore/offgrid-gallery/en-06_collage-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-06_collage.png" data-shot="shot6" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-07_studio-640.webp 640w, assets/images/appstore/offgrid-gallery/en-07_studio-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-07_studio.png" data-shot="shot7" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/offgrid-gallery/en-08_grid-640.webp 640w, assets/images/appstore/offgrid-gallery/en-08_grid-1280.webp 1280w">
+            <img src="assets/images/appstore/offgrid-gallery/en-08_grid.png" data-shot="shot8" data-responsive-widths="640,1280" alt="Offgrid Gallery screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:offgridGallery.screens.alt">
           </picture>
         </figure>
       </div>
@@ -107,8 +142,11 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p data-i18n="offgridGallery.footer.tagline">A private place for photos you want to keep separate.</p>
-      <a href="privacy/offgrid-gallery/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      <p data-i18n="offgridGallery.footer.tagline">A place of its own for everything you love.</p>
+      <div class="footer-links">
+        <a href="index.html" data-localized-link data-i18n="nav.allApps">All apps</a>
+        <a href="privacy/offgrid-gallery/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      </div>
     </div>
   </footer>
 

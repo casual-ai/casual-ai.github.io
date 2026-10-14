@@ -1,13 +1,17 @@
 (() => {
+  const root = document.documentElement;
+  // Arms the scroll reveal: without this class every .reveal stays visible, so
+  // a blocked or failed site.js still leaves a complete page.
+  root.classList.add("js");
+
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  let storedTheme = null;
   try {
-    const storedTheme = window.localStorage.getItem("site-theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.dataset.theme = storedTheme === "light" || storedTheme === "dark"
-      ? storedTheme
-      : (prefersDark ? "dark" : "light");
+    storedTheme = window.localStorage.getItem("site-theme");
   } catch {
-    document.documentElement.dataset.theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    // Storage can throw in private windows; the system theme is fine.
   }
+  root.dataset.theme = storedTheme === "light" || storedTheme === "dark"
+    ? storedTheme
+    : (prefersDark ? "dark" : "light");
 })();

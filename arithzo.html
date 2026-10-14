@@ -11,9 +11,17 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
   <header class="site-header">
-    <div class="container header-inner app-header-inner">
-      <a class="back-btn" href="index.html" data-localized-link data-i18n-attr="aria-label:controls.back,title:controls.back">←</a>
+    <div class="container header-inner">
+      <a class="nav-back" href="index.html" data-localized-link>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>
+        <span data-i18n="nav.allApps">All apps</span>
+      </a>
+      <a class="nav-brand" href="#top">
+        <img src="assets/images/arithzo-icon.png" alt="" width="26" height="26" data-theme-asset-light="assets/images/arithzo-icon.png" data-theme-asset-dark="assets/images/arithzo-icon-dark.png">
+        <span data-i18n="arithzo.title">Arithzo</span>
+      </a>
       <div class="control-row">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
           <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
@@ -21,12 +29,15 @@
           <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
           <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+        <button id="theme-toggle" class="icon-btn" type="button" data-i18n-attr="aria-label:controls.theme.toggle,title:controls.theme.toggle">
+          <svg class="i-sun" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="3.25"/><path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M3 3l1.6 1.6M11.4 11.4 13 13M13 3l-1.6 1.6M4.6 11.4 3 13"/></svg>
+          <svg class="i-moon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero-inner">
         <img
@@ -55,11 +66,10 @@
             data-i18n-attr="alt:arithzo.store.badgeAlt"
           >
         </a>
-        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
       </div>
     </section>
 
-    <section class="container section" id="overview">
+    <section class="band" id="overview">
       <p class="kicker" data-i18n="arithzo.overview.kicker">Overview</p>
       <h2 class="section-title" data-i18n="arithzo.overview.title">Fast daily arithmetic practice that feels like a game.</h2>
 
@@ -79,20 +89,48 @@
       </div>
     </section>
 
-    <section class="container section" id="screenshots">
+    <section class="band band-alt" id="screenshots">
       <p class="kicker" data-i18n="arithzo.screens.kicker">Screenshot</p>
       <h2 class="section-title" data-i18n="arithzo.screens.title">Main menu and training modes at a glance.</h2>
 
-      <div class="shot-stack">
-        <article class="shot-row">
-          <div class="shot-copy">
-            <h3 data-i18n="arithzo.screens.1.title">Home screen</h3>
-            <p data-i18n="arithzo.screens.1.body">Jump into focused practice sessions and challenge modes from one clear starting point.</p>
-          </div>
-          <figure class="shot-frame">
-            <img src="assets/images/localized/arithzo-gallery-light-main.jpg" data-shot="screen1" alt="Arithzo app screenshot" width="368" height="800" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
-          </figure>
-        </article>
+
+      <div class="shot-gallery">
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-01_home-640.webp 640w, assets/images/appstore/arithzo/en-01_home-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-01_home.png" data-shot="shot1" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-02_practice-640.webp 640w, assets/images/appstore/arithzo/en-02_practice-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-02_practice.png" data-shot="shot2" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-03_dark_home-640.webp 640w, assets/images/appstore/arithzo/en-03_dark_home-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-03_dark_home.png" data-shot="shot3" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-04_challenge-640.webp 640w, assets/images/appstore/arithzo/en-04_challenge-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-04_challenge.png" data-shot="shot4" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-05_results-640.webp 640w, assets/images/appstore/arithzo/en-05_results-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-05_results.png" data-shot="shot5" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/arithzo/en-06_share-640.webp 640w, assets/images/appstore/arithzo/en-06_share-1280.webp 1280w">
+            <img src="assets/images/appstore/arithzo/en-06_share.png" data-shot="shot6" data-responsive-widths="640,1280" alt="Arithzo screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:arithzo.screens.alt">
+          </picture>
+        </figure>
       </div>
     </section>
   </main>
@@ -100,7 +138,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p data-i18n="arithzo.footer.tagline">Focused learning games for students.</p>
-      <a href="privacy/arithzo/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      <div class="footer-links">
+        <a href="index.html" data-localized-link data-i18n="nav.allApps">All apps</a>
+        <a href="privacy/arithzo/" data-localized-link data-i18n="footer.privacy">Read Privacy Policy</a>
+      </div>
     </div>
   </footer>
 

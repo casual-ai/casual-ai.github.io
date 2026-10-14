@@ -11,25 +11,38 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main" data-i18n="nav.skip">跳到正文</a>
   <header class="site-header">
-    <div class="container header-inner app-header-inner">
-      <a class="back-btn" href="index.html" data-localized-link data-i18n-attr="aria-label:controls.back,title:controls.back">←</a>
+    <div class="container header-inner">
+      <a class="nav-back" href="index.html" data-localized-link>
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M10 3.5 5.5 8l4.5 4.5"/></svg>
+        <span data-i18n="nav.allApps">全部应用</span>
+      </a>
+      <a class="nav-brand" href="#top">
+        <img src="assets/images/chinese-vocabulary-book-icon.png" alt="" width="26" height="26">
+        <span data-i18n="chineseVocabularyBook.title">英语单词本：中高考词汇</span>
+      </a>
       <div class="control-row">
         <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:controls.language">
+          <button class="lang-btn" type="button" data-locale="en" aria-label="English" title="English">EN</button>
+          <button class="lang-btn" type="button" data-locale="ja" aria-label="日本語" title="日本語">JP</button>
           <button class="lang-btn" type="button" data-locale="zh-Hans" aria-label="简体中文" title="简体中文">简</button>
           <button class="lang-btn" type="button" data-locale="zh-Hant" aria-label="繁體中文" title="繁體中文">繁</button>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-live="polite" data-i18n-attr="aria-label:controls.theme.toggle"></button>
+        <button id="theme-toggle" class="icon-btn" type="button" data-i18n-attr="aria-label:controls.theme.toggle,title:controls.theme.toggle">
+          <svg class="i-sun" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="3.25"/><path d="M8 .9v2.2M8 12.9v2.2M.9 8h2.2M12.9 8h2.2M3 3l1.6 1.6M11.4 11.4 13 13M13 3l-1.6 1.6M4.6 11.4 3 13"/></svg>
+          <svg class="i-moon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M13.5 9.8A5.8 5.8 0 0 1 6.2 2.5a5.8 5.8 0 1 0 7.3 7.3Z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="top">
       <div class="hero-inner">
         <img class="hero-logo borderless-app-icon" src="assets/images/chinese-vocabulary-book-icon.png" alt="英语单词本：中高考词汇应用图标" data-i18n-attr="alt:chineseVocabularyBook.iconAlt">
         <h1 data-i18n="chineseVocabularyBook.title">英语单词本：中高考词汇</h1>
-        <p class="hero-subtitle" data-i18n="chineseVocabularyBook.subtitle">离线背单词，科学复习更牢固</p>
+        <p class="hero-subtitle" data-i18n="chineseVocabularyBook.subtitle">离线记单词·雅思托福·AI对话与阅读理解</p>
         <a
           class="app-store-link"
           href="https://apps.apple.com/us/app/id6787317959"
@@ -46,11 +59,10 @@
             data-i18n-attr="alt:chineseVocabularyBook.store.badgeAlt"
           >
         </a>
-        <a class="scroll-cue" href="#overview" aria-label="Scroll"></a>
       </div>
     </section>
 
-    <section class="container section" id="overview">
+    <section class="band" id="overview">
       <p class="kicker" data-i18n="chineseVocabularyBook.overview.kicker">概览</p>
       <h2 class="section-title" data-i18n="chineseVocabularyBook.overview.title">7000 个英语词汇，离线学习，科学复习。</h2>
 
@@ -64,18 +76,76 @@
           <p data-i18n="chineseVocabularyBook.feature.2.body">根据你的掌握情况自动安排复习时间，让熟悉和不熟悉的单词以合适节奏出现。</p>
         </article>
         <article class="feature-card">
-          <h3 data-i18n="chineseVocabularyBook.feature.3.title">多种练习方式</h3>
-          <p data-i18n="chineseVocabularyBook.feature.3.body">闪卡、选择题、拼写练习、复习队列和 AI 填空，配合学习图表、成就徽章与桌面小组件。</p>
+          <h3 data-i18n="chineseVocabularyBook.feature.3.title">多种练习、AI 对话与阅读理解</h3>
+          <p data-i18n="chineseVocabularyBook.feature.3.body">闪卡、测试、拼写练习和复习队列，外加 70 篇分级阅读理解。在支持 Apple Intelligence 的设备上，还能挑 5 个单词进行英语对话，或用相机扫描课本生成单词卡。不依赖 AI 也不需要联网，照样能完整使用。</p>
         </article>
       </div>
     </section>
 
+    <section class="band band-alt" id="screenshots">
+      <p class="kicker" data-i18n="chineseVocabularyBook.screens.kicker">截图</p>
+      <h2 class="section-title" data-i18n="chineseVocabularyBook.screens.title">进度、学习与复习，一目了然。</h2>
+
+      <div class="shot-gallery">
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-01_progress-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-01_progress-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-01_progress.png" data-shot="shot1" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-02_study-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-02_study-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-02_study.png" data-shot="shot2" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-03_flashcard_front-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-03_flashcard_front-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-03_flashcard_front.png" data-shot="shot3" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-04_flashcard_back-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-04_flashcard_back-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-04_flashcard_back.png" data-shot="shot4" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-05_ai-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-05_ai-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-05_ai.png" data-shot="shot5" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-06_review-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-06_review-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-06_review.png" data-shot="shot6" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-07_test-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-07_test-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-07_test.png" data-shot="shot7" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+        <figure class="shot-frame">
+          <picture>
+            <source data-shot-source type="image/webp" sizes="250px" srcset="assets/images/appstore/chinese-vocabulary-book/zh-Hans-08_reading-640.webp 640w, assets/images/appstore/chinese-vocabulary-book/zh-Hans-08_reading-1280.webp 1280w">
+            <img src="assets/images/appstore/chinese-vocabulary-book/zh-Hans-08_reading.png" data-shot="shot8" data-responsive-widths="640,1280" alt="English Vocabulary Book screenshot" width="1290" height="2796" loading="lazy" decoding="async" data-i18n-attr="alt:chineseVocabularyBook.screens.alt">
+          </picture>
+        </figure>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p data-i18n="chineseVocabularyBook.footer.tagline">你的随身离线英语词汇本。</p>
-      <a href="privacy/chinese-vocabulary-book/" data-localized-link data-i18n="footer.privacy">查看隐私政策</a>
+      <div class="footer-links">
+        <a href="index.html" data-localized-link data-i18n="nav.allApps">全部应用</a>
+        <a href="privacy/chinese-vocabulary-book/" data-localized-link data-i18n="footer.privacy">查看隐私政策</a>
+      </div>
     </div>
   </footer>
 
