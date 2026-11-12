@@ -146,3 +146,17 @@ apps:
     icon_dark: Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-dark.png
     site_icon: assets/images/tubtime-icon.png
     site_icon_dark: assets/images/tubtime-icon-dark.png
+
+  pulsebook:
+    page: pulsebook.html
+    prefix: pulsebook
+    repo: ~/Projects/BloodPressure
+    config: AppStoreConnect/pulsebook/asc-config.yaml
+    platform: IOS
+    locales:
+      en-US: en
+      ja: ja
+      zh-Hans: zh-Hans
+      zh-Hant: zh-Hant
+    icon: BloodPressure/Assets.xcassets/AppIcon.appiconset/AppIcon.png
+    site_icon: assets/images/pulsebook-icon.png
